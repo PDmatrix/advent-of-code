@@ -7,13 +7,11 @@ namespace CliUtils.Verbs
 	{
 		public static string Header(string html)
 		{
-			var parsed = Regex.Replace(html, @"^(<h2>)|(<\/h2>)$", string.Empty);
-			return $"# {parsed}{Environment.NewLine}";
+			return $"# {Regex.Replace(html, @"^(<h2>)|(<\/h2>)$", string.Empty)}";
 		}
 		public static string Paragraph(string html)
 		{
-			var parsed = Regex.Replace(html, @"^(<p>)|(<\/p>)$", string.Empty);
-			return $@"{parsed}{Environment.NewLine}";
+			return Regex.Replace(html, @"^(<p>)|(<\/p>)$", string.Empty);
 		}
 		
 		public static string Code(string html)
@@ -28,10 +26,9 @@ namespace CliUtils.Verbs
 		
 		public static string UnorderedList(string html)
 		{
-			var parsed = Regex.Replace(html, @"(<ul>)|(<\/ul>)", "\b")
+			return Regex.Replace(html, @"(<ul>)|(<\/ul>)", string.Empty)
 				.Replace(@"<li>", "* ")
 				.Replace("</li>", string.Empty);
-			return $@"{parsed}{Environment.NewLine}";
 		}
 		
 		public static string Link(string html)
@@ -58,8 +55,7 @@ namespace CliUtils.Verbs
 		
 		public static string Pre(string html)
 		{
-			var parsed = Regex.Replace(html, @"^(<pre>)|(<\/pre>)$", string.Empty);
-			return $"{parsed}{Environment.NewLine}";
+			return Regex.Replace(html, @"^(<pre>)|(<\/pre>)$", string.Empty);
 		}
 	}
 }

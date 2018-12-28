@@ -50,8 +50,10 @@ namespace CliUtils.Verbs
 			foreach (var child in article.Children)
 			{
 				sb.Append(HandleNode(child));
-				sb.Append(Environment.NewLine);
+				sb.Append(Environment.NewLine + Environment.NewLine);
 			}
+
+			sb.Remove(sb.Length - 2, 2);
 			return sb.ToString();
 		} 
 	}
