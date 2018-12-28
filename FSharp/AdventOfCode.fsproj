@@ -8,7 +8,8 @@
     <ItemGroup>
         <Compile Include="Common.fs" />
         <Content Include="Input\2015\Day01.in" />
-        <Compile Include="Solutions\2015\Day1.fs" />
+        <Compile Include="Solutions\2015\Day1\Day1.fs" />
+        <Content Include="Solutions\2015\README.md" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
