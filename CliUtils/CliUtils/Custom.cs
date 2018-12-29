@@ -24,5 +24,10 @@ namespace CliUtils
 				};
 			}
 		}
+
+		public static string GetChallengeUrl(int year, int day)
+		{
+			return $"{year}/day/{day}";
+		}
 	}
 }

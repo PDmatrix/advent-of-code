@@ -11,14 +11,15 @@ namespace CliUtils
 	{
 		private static async Task HandleParse(ParseOptions options)
 		{
-			var html = await Parse.GetHtml(options.Year, options.Day);
-			var md = await Parse.HtmlToMd(html);
+			var html = await Parse.GetChallengeAsync(options.Year, options.Day);
+			var md = await Parse.HtmlToMdAsync(html);
 			Console.Write(md);
 		}
 
 		private static async Task HandleGen(GenerateOptions options)
 		{
-			Console.WriteLine();
+			await Generate.HandleGenerateAsync(
+				options.Year, options.Day, options.Path, options.GenType);
 		}
 
 		private static async Task HandleError(IEnumerable<Error> errors)
@@ -28,7 +29,8 @@ namespace CliUtils
 
 		private static async Task Main(string[] args)
 		{
-			await Parser.Default.ParseArguments<ParseOptions, GenerateOptions>(args)
+			var parser = new Parser(cfg => cfg.CaseInsensitiveEnumValues = true);
+			await parser.ParseArguments<ParseOptions, GenerateOptions>(args)
 				.MapResult(
 					async (ParseOptions opts) => await HandleParse(opts),
 					async (GenerateOptions opts) => await HandleGen(opts),

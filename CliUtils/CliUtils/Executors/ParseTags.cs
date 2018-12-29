@@ -8,6 +8,7 @@ namespace CliUtils.Executors
 		{
 			return $"# {Regex.Replace(html, @"^(<h2.*?>)|(<\/h2>)$", string.Empty)}";
 		}
+		
 		public static string Paragraph(string html)
 		{
 			return Regex.Replace(html, @"^(<p>)|(<\/p>)$", string.Empty);

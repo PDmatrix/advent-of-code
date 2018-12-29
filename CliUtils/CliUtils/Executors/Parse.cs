@@ -12,12 +12,6 @@ namespace CliUtils.Executors
 {
 	public static class Parse
 	{
-		private static readonly HttpClient HttpClient
-			= new HttpClient(
-					new HttpClientHandler
-					{CookieContainer = new CookieContainer()}) 
-				{BaseAddress = new Uri("https://www.adventofcode.com/")};
-
 		private static readonly IDictionary<string, Func<string, string>> FuncMap =
 			new Dictionary<string, Func<string, string>>
 			{
@@ -39,16 +33,24 @@ namespace CliUtils.Executors
 			return res;
 		}
 		
-		public static async Task<string> GetHtml(int year, int day)
+		public static async Task<string> GetChallengeAsync(int year, int day)
 		{
-			return await Custom.HttpClient.Value.GetStringAsync($"{year}/day/{day}");
+			return await Custom.HttpClient.Value.GetStringAsync(Custom.GetChallengeUrl(year, day));
 		}
 		
-		public static async Task<string> HtmlToMd(string html)
+		public static async Task<string> GetInputAsync(int year, int day)
+		{
+			return await Custom.HttpClient.Value.GetStringAsync(
+				$"{Custom.GetChallengeUrl(year, day)}/input");
+		}
+		
+		// TODO: Rewrite with async streams in C# 8
+		public static async Task<string> HtmlToMdAsync(string html)
 		{
 			var parser = new HtmlParser();
 			var document = await parser.ParseAsync(html);
-			var children = document.QuerySelectorAll("article").SelectMany(r => r.Children);
+			var children = 
+				document.QuerySelectorAll("article").SelectMany(r => r.Children).ToArray();
 			var sb = new StringBuilder();
 			foreach (var child in children)
 			{

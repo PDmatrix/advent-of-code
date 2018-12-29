@@ -11,7 +11,7 @@ namespace CliUtils.Test
 		[MemberData(nameof(HtmlToMdDataSource.TestData), MemberType = typeof(HtmlToMdDataSource))]
 		public async Task HtmlToMd(string html, string md)
 		{
-			var parsed = await Parse.HtmlToMd(html);
+			var parsed = await Parse.HtmlToMdAsync(html);
 			Assert.Equal(md, parsed);
 		}
 	}
