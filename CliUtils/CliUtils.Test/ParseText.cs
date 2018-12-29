@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using CliUtils.Executors;
 using Xunit;
 
 namespace CliUtils.Test
@@ -10,7 +11,7 @@ namespace CliUtils.Test
 		[MemberData(nameof(HtmlToMdDataSource.TestData), MemberType = typeof(HtmlToMdDataSource))]
 		public async Task HtmlToMd(string html, string md)
 		{
-			var parsed = await Verbs.Parse.HtmlToMd(html);
+			var parsed = await Parse.HtmlToMd(html);
 			Assert.Equal(md, parsed);
 		}
 	}

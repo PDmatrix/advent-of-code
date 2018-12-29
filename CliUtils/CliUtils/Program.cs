@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CliUtils.Executors;
 using CliUtils.Options;
 using CommandLine;
 
@@ -10,8 +11,8 @@ namespace CliUtils
 	{
 		private static async Task HandleParse(ParseOptions options)
 		{
-			var html = await Verbs.Parse.GetHtml(options.Year, options.Day);
-			var md = await Verbs.Parse.HtmlToMd(html);
+			var html = await Parse.GetHtml(options.Year, options.Day);
+			var md = await Parse.HtmlToMd(html);
 			Console.Write(md);
 		}
 

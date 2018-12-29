@@ -1,13 +1,12 @@
-using System;
 using System.Text.RegularExpressions;
 
-namespace CliUtils.Verbs
+namespace CliUtils.Executors
 {
 	public static class ParseTags
 	{
 		public static string Header(string html)
 		{
-			return $"# {Regex.Replace(html, @"^(<h2>)|(<\/h2>)$", string.Empty)}";
+			return $"# {Regex.Replace(html, @"^(<h2.*?>)|(<\/h2>)$", string.Empty)}";
 		}
 		public static string Paragraph(string html)
 		{

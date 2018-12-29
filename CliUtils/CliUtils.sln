@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliUtils", "CliUtils\CliUtils.csproj", "{11020A25-A4BB-4098-8821-69B295CCD4A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliUtils.Test", "CliUtils.Test\CliUtils.Test.csproj", "{AA17E62A-07EE-4E88-B281-4C3978A4E428}"
