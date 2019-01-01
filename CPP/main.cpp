@@ -34,8 +34,8 @@ void exec(int year, int day) {
               std::istream_iterator<std::string>(),
               std::back_inserter(lines));
     auto challenge = get_challenge(year, day, lines);
-    std::cout << "First day: " << challenge->part1() << std::endl;
-    std::cout << "Second day: " << challenge->part2() << std::endl;
+    std::cout << "First part: " << challenge->part1() << std::endl;
+    std::cout << "Second part: " << challenge->part2() << std::endl;
 }
 
 int main(int argc, char **argv) {
