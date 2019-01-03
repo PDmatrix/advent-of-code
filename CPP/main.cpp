@@ -2,6 +2,7 @@
 #include <cxxopts.hpp>
 #include <fstream>
 #include "Solutions/2015/1/Year2015Day01.h"
+#include "Solutions/2015/2/Year2015Day02.h"
 
 auto parse_options(int argc, char **argv) {
     cxxopts::Options options("Advent Of Code", "My solutions for the Advent of code using C++");
@@ -21,7 +22,8 @@ std::string get_input_path(int year, int day) {
 Challenge* get_challenge(int year, int day, const std::vector<std::string> &lines) {
     std::map<int, std::map<int, Challenge*>> map {
             {2015, {
-                {1, new Year2015Day01(lines)}
+                {1, new Year2015Day01(lines)},
+                {2, new Year2015Day02(lines)}
             }}
     };
     return map[year][day];
@@ -33,6 +35,16 @@ void exec(int year, int day) {
     std::copy(std::istream_iterator<std::string>(input),
               std::istream_iterator<std::string>(),
               std::back_inserter(lines));
+    try {
+        int code = (int)lines[0][0];
+        while(code < 0) {
+            lines[0].erase(0, 1);
+            code = (int)lines[0][0];
+        }
+    }
+    catch (...) {
+
+    }
     auto challenge = get_challenge(year, day, lines);
     std::cout << "First part: " << challenge->part1() << std::endl;
     std::cout << "Second part: " << challenge->part2() << std::endl;
