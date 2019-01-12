@@ -1,8 +1,7 @@
 #include <iostream>
 #include <cxxopts.hpp>
 #include <fstream>
-#include "Solutions/2015/1/Year2015Day01.h"
-#include "Solutions/2015/2/Year2015Day02.h"
+#include "Common/Solutions.h"
 
 auto parse_options(int argc, char **argv) {
     cxxopts::Options options("Advent Of Code", "My solutions for the Advent of code using C++");
@@ -23,28 +22,45 @@ Challenge* get_challenge(int year, int day, const std::vector<std::string> &line
     std::map<int, std::map<int, Challenge*>> map {
             {2015, {
                 {1, new Year2015Day01(lines)},
-                {2, new Year2015Day02(lines)}
+                {2, new Year2015Day02(lines)},
+                {3, new Year2015Day03(lines)}
             }}
     };
     return map[year][day];
 }
 
-void exec(int year, int day) {
-    std::ifstream input(get_input_path(year, day));
+inline std::vector<std::string> read_lines(const std::string& inputFile)
+{
     std::vector<std::string> lines;
-    std::copy(std::istream_iterator<std::string>(input),
-              std::istream_iterator<std::string>(),
-              std::back_inserter(lines));
-    try {
+    std::fstream f(inputFile);
+
+    while(!f.eof())
+    {
+        std::string line;
+        if(std::getline(f, line))
+        {
+            line.erase(std::remove(line.begin(), line.end(), '\r'), line.end());
+            line.erase(std::remove(line.begin(), line.end(), '\n'), line.end());
+            lines.push_back(line);
+        }
+    }
+    return lines;
+}
+
+void normalize_lines(std::vector<std::string>& lines) {
+   try {
         int code = (int)lines[0][0];
         while(code < 0) {
             lines[0].erase(0, 1);
             code = (int)lines[0][0];
         }
     }
-    catch (...) {
+    catch (...) { }
+}
 
-    }
+void exec(int year, int day) {
+    std::vector<std::string> lines = read_lines(get_input_path(year, day));
+    normalize_lines(lines);
     auto challenge = get_challenge(year, day, lines);
     std::cout << "First part: " << challenge->part1() << std::endl;
     std::cout << "Second part: " << challenge->part2() << std::endl;
