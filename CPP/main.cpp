@@ -23,7 +23,8 @@ Challenge* get_challenge(int year, int day, const std::vector<std::string> &line
             {2015, {
                 {1, new Year2015Day01(lines)},
                 {2, new Year2015Day02(lines)},
-                {3, new Year2015Day03(lines)}
+                {3, new Year2015Day03(lines)},
+                {4, new Year2015Day04(lines)}
             }}
     };
     return map[year][day];
