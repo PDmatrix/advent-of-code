@@ -16,7 +16,7 @@ namespace CliUtils.Executors
 		
 		public static string Code(string html)
 		{
-			return Regex.Replace(html, @"(<code>)|(<\/code>)", "```");
+			return Regex.Replace(html, @"(<code.*?>)|(<\/code>)", "```");
 		}
 		
 		public static string Emphasis(string html)

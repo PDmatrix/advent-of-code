@@ -9,14 +9,14 @@ namespace CliUtils
 {
 	internal static class Program
 	{
-		private static async Task HandleParse(ParseOptions options)
+		private static async Task HandleParseAsync(ParseOptions options)
 		{
 			var html = await Parse.GetChallengeAsync(options.Year, options.Day);
 			var md = await Parse.HtmlToMdAsync(html);
 			Console.Write(md);
 		}
 
-		private static async Task HandleGen(GenerateOptions options)
+		private static async Task HandleGenAsync(GenerateOptions options)
 		{
 			await Generate.HandleGenerateAsync(
 				options.Year, options.Day, options.Path, options.GenType);
@@ -26,15 +26,17 @@ namespace CliUtils
 		{
 			Console.WriteLine(string.Join(", ", errors));
 		}
-
+		
 		private static async Task Main(string[] args)
 		{
 			var parser = new Parser(cfg => cfg.CaseInsensitiveEnumValues = true);
 			await parser.ParseArguments<ParseOptions, GenerateOptions>(args)
 				.MapResult(
-					async (ParseOptions opts) => await HandleParse(opts),
-					async (GenerateOptions opts) => await HandleGen(opts),
+					async (ParseOptions opts) => await HandleParseAsync(opts),
+					async (GenerateOptions opts) => await HandleGenAsync(opts),
 					async errors => await HandleError(errors));
 		}
+
+		
 	}
 }
