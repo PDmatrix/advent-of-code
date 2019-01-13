@@ -9,5 +9,6 @@
 #include "../Solutions/2015/2/Year2015Day02.h"
 #include "../Solutions/2015/3/Year2015Day03.h"
 #include "../Solutions/2015/4/Year2015Day04.h"
+#include "../Solutions/2015/5/Year2015Day05.h"
 
 #endif //CPP_SOLUTIONS_H
