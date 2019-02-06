@@ -5,6 +5,7 @@ using AdventOfCode.Common;
 
 namespace AdventOfCode.Solutions._2015._2
 {
+	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day02 : ISolution
 	{
 		// ReSharper disable once UnusedMember.Global
