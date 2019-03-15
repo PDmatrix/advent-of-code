@@ -11,5 +11,6 @@
 #include "../Solutions/2015/4/Year2015Day04.h"
 #include "../Solutions/2015/5/Year2015Day05.h"
 #include "../Solutions/2015/6/Year2015Day06.h"
+#include "../Solutions/2015/7/Year2015Day07.h"
 
 #endif //CPP_SOLUTIONS_H

@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using AdventOfCode.Common;
 
 namespace AdventOfCode.Solutions._2015._8

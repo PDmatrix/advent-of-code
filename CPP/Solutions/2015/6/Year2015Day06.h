@@ -6,19 +6,6 @@
 #include "../../../Common/Challenge.h"
 #include "../../../Common/Common.h"
 
-struct Instruction {
-   int startX, endX, startY, endY;
-   std::function<bool(const bool)> motion;
-   Instruction(int sx, int ex, int sy, int ey, std::function<bool(bool)> fn)
-   : startX(sx), endX(ex), startY(sy), endY(ey), motion(std::move(fn)){}
-};
-
-struct CorrectInstruction {
-    int startX, endX, startY, endY;
-    std::function<int(const int)> motion;
-    CorrectInstruction(int sx, int ex, int sy, int ey, std::function<int(int)> fn)
-            : startX(sx), endX(ex), startY(sy), endY(ey), motion(std::move(fn)){}
-};
 class Year2015Day06 : public Challenge {
 public:
     auto parse() {
@@ -128,6 +115,20 @@ public:
     }
 private:
     std::vector<std::string> input;
+    struct Instruction {
+        int startX, endX, startY, endY;
+        std::function<bool(const bool)> motion;
+        Instruction(int sx, int ex, int sy, int ey, std::function<bool(bool)> fn)
+                : startX(sx), endX(ex), startY(sy), endY(ey), motion(std::move(fn)){}
+    };
+
+    struct CorrectInstruction {
+        int startX, endX, startY, endY;
+        std::function<int(const int)> motion;
+        CorrectInstruction(int sx, int ex, int sy, int ey, std::function<int(int)> fn)
+                : startX(sx), endX(ex), startY(sy), endY(ey), motion(std::move(fn)){}
+    };
+
 };
 
 #endif //CPP_YEAR2015DAY06_H
