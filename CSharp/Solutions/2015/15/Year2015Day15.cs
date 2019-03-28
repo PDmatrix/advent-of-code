@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -9,11 +8,6 @@ namespace AdventOfCode.Solutions._2015._15
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day15 : ISolution
 	{
-		// ReSharper disable once UnusedMember.Global
-		public static int Year = 2015;
-		// ReSharper disable once UnusedMember.Global
-		public static int Day = 15;
-		
 		private class Ingredient
 		{
 			public string Name { get; set; }

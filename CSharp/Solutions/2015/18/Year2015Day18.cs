@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using AdventOfCode.Common;
@@ -8,11 +7,6 @@ namespace AdventOfCode.Solutions._2015._18
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day18 : ISolution
 	{
-		// ReSharper disable once UnusedMember.Global
-		public static int Year = 2015;
-		// ReSharper disable once UnusedMember.Global
-		public static int Day = 18;
-				
 		public string Part1(IEnumerable<string> lines)
 		{
 			var state = GetState(lines);

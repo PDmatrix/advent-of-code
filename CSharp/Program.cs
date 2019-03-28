@@ -32,8 +32,13 @@ namespace AdventOfCode
 			var allSolutions = Assembly.GetExecutingAssembly().GetTypes()
 				.Where(r =>interfaceType.IsAssignableFrom(r) && r != interfaceType);
 			var solutionType = allSolutions
-				.FirstOrDefault(r => (int) r.GetField("Year").GetValue(null) == year
-				                     && (int) r.GetField("Day").GetValue(null) == day);
+				.FirstOrDefault(r =>
+				{
+					var splitted = r.Name.Split("Day");
+					var typeYear = int.Parse(splitted.First().Replace("Year", string.Empty));
+					var typeDay = int.Parse(splitted.Last());
+					return typeYear == year  && typeDay == day;
+				});
 			if (solutionType == null)
 				throw new Exception("Solution not found");
 			

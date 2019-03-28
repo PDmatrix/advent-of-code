@@ -8,11 +8,6 @@ namespace AdventOfCode.Solutions._2015._7
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day07 : ISolution
 	{
-		// ReSharper disable once UnusedMember.Global
-		public static int Year = 2015;
-		// ReSharper disable once UnusedMember.Global
-		public static int Day = 7;
-
 		private class Instruction
 		{
 			public Instruction()
