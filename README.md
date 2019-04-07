@@ -28,5 +28,5 @@ My solutions for the Advent of Code
 | 21  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 22  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 23  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
-| 24  | :x:    | :x:    | :x:    | :x:    |
+| 24  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 25  | :x:    | :x:    | :x:    | :x:    |
