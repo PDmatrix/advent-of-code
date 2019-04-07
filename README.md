@@ -3,14 +3,14 @@ My solutions for the Advent of Code
 
 ## Stats
 
-| Day | 2015 | 2016 | 2017 | 2018 |
-|-----|--------|--------|--------|--------|
+| Day |   :tada:2015:tada:    |  2016  |  2017  |  2018  |
+|-----|-----------------------|--------|--------|--------|
 | 1   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 2   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 3   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 4   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 5   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
-| 6   | :x:    | :x:    | :x:    | :x:    |
+| 6   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 7   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 8   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 9   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
