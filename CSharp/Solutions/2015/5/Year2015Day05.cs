@@ -34,9 +34,5 @@ namespace AdventOfCode.Solutions._2015._5
 			var niceStrings = input.Count(str => HasDuplicate(str) && HasPair(str));
 			return niceStrings.ToString();
 		}
-		
-		
-		
-		
 	}
 }
