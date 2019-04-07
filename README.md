@@ -29,4 +29,4 @@ My solutions for the Advent of Code
 | 22  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 23  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 24  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
-| 25  | :x:    | :x:    | :x:    | :x:    |
+| 25  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
