@@ -5,7 +5,7 @@ My solutions for the Advent of Code
 
 | Day |   :tada:2015:tada:    |  2016  |  2017  |  2018  |
 |-----|-----------------------|--------|--------|--------|
-| 1   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
+| 1   | :heavy_check_mark:    | :heavy_check_mark:    | :x:    | :x:    |
 | 2   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 3   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 4   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
