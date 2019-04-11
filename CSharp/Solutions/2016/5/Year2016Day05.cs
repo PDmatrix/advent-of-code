@@ -1,10 +1,7 @@
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Text.RegularExpressions;
 using AdventOfCode.Common;
 
 namespace AdventOfCode.Solutions._2016._5
