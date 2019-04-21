@@ -5,13 +5,13 @@ My solutions for the Advent of Code
 
 | Day |   :tada:2015:tada:    |  2016  |  2017  |  2018  |
 |-----|-----------------------|--------|--------|--------|
-| 1   | :heavy_check_mark: [Blog Post][201501]   | :heavy_check_mark:    | :x:    | :x:    |
-| 2   | :heavy_check_mark: [Blog Post][201502]   | :heavy_check_mark:    | :x:    | :x:    |
-| 3   | :heavy_check_mark: [Blog Post][201503]   | :heavy_check_mark:    | :x:    | :x:    |
+| 1   | :heavy_check_mark: [Blog Post][201501]  | :heavy_check_mark:    | :x:    | :x:    |
+| 2   | :heavy_check_mark: [Blog Post][201502]  | :heavy_check_mark:    | :x:    | :x:    |
+| 3   | :heavy_check_mark: [Blog Post][201503]  | :heavy_check_mark:    | :x:    | :x:    |
 | 4   | :heavy_check_mark: [Blog Post][201504]  | :heavy_check_mark:    | :x:    | :x:    |
 | 5   | :heavy_check_mark:    | :heavy_check_mark:    | :x:    | :x:    |
 | 6   | :heavy_check_mark:    | :heavy_check_mark:    | :x:    | :x:    |
-| 7   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
+| 7   | :heavy_check_mark:    | :heavy_check_mark:    | :x:    | :x:    |
 | 8   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 9   | :heavy_check_mark:    | :x:    | :x:    | :x:    |
 | 10  | :heavy_check_mark:    | :x:    | :x:    | :x:    |
