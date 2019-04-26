@@ -19,7 +19,12 @@ namespace AdventOfCode.Solutions._2015._5
 			bool ContainsNaughtyStrings(string str) => 
 				Regex.IsMatch(str, @"ab|cd|pq|xy");
 
-			var niceStrings = input.Count(str => HasThreeVowels(str) && HasDoubledLetter(str) && !ContainsNaughtyStrings(str));
+			bool IsNiceString(string str) =>
+				HasThreeVowels(str)
+				&& HasDoubledLetter(str)
+				&& !ContainsNaughtyStrings(str);
+			
+			var niceStrings = input.Count(IsNiceString);
 			return niceStrings.ToString();
 		}
 
@@ -30,8 +35,12 @@ namespace AdventOfCode.Solutions._2015._5
 			
 			bool HasDuplicate(string str) => 
 				Regex.IsMatch(str, @"(\w).\1");
+
+			bool IsNiceString(string str) =>
+				HasDuplicate(str)
+				&& HasPair(str);
 			
-			var niceStrings = input.Count(str => HasDuplicate(str) && HasPair(str));
+			var niceStrings = input.Count(IsNiceString);
 			return niceStrings.ToString();
 		}
 	}
