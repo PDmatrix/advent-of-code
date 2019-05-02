@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -19,11 +18,24 @@ namespace AdventOfCode.Solutions._2015._6
 				{
 					for (var y = instruction.StartY; y <= instruction.EndY; y++)
 					{
-						grid[x, y] = instruction.Operation(grid[x, y]);
+						var newValue = grid[x, y];
+						switch (instruction.Operation)
+						{
+							case "turn on":
+								newValue = true;
+								break;
+							case "turn off":
+								newValue = false;
+								break;
+							default:
+								newValue = !newValue;
+								break;
+						}
+						grid[x, y] = newValue;
 					}
 				}
 			}
-
+			
 			var result = 0;
 			for (var x = 0; x < 1000; x++)
 			{
@@ -38,7 +50,7 @@ namespace AdventOfCode.Solutions._2015._6
 		
 		public string Part2(IEnumerable<string> input)
 		{
-			var instructions = GetCorrectInstructions(input);
+			var instructions = GetInstructions(input);
 			var grid = new int[1000, 1000];
 			foreach (var instruction in instructions)
 			{
@@ -46,7 +58,20 @@ namespace AdventOfCode.Solutions._2015._6
 				{
 					for (var y = instruction.StartY; y <= instruction.EndY; y++)
 					{
-						grid[x, y] = instruction.Operation(grid[x, y]);
+						var newValue = grid[x, y];
+						switch (instruction.Operation)
+						{
+							case "turn on":
+								newValue++;
+								break;
+							case "turn off":
+								newValue = newValue == 0 ? 0 : newValue - 1;
+								break;
+							default:
+								newValue += 2;
+								break;
+						}
+						grid[x, y] = newValue;
 					}
 				}
 			}
@@ -65,35 +90,17 @@ namespace AdventOfCode.Solutions._2015._6
 
 		private static IEnumerable<Instruction> GetInstructions(IEnumerable<string> input)
 		{
-			foreach (var instruction in input)
-			{
-				var splitted = instruction.Split().ToArray();
-				var coordinates = Regex.Matches(instruction, @"\d*")
-					.Where(r => !string.IsNullOrWhiteSpace(r.Value))
-					.Select(r => int.Parse(r.Value))
-					.ToArray();
-				var ins = new Instruction
+			const string pattern = 
+				@"(turn on|turn off|toggle) (\d+),(\d+) through (\d+),(\d+)";
+			return input.Select(r => Regex.Match(r, pattern).Groups)
+				.Select(r => new Instruction
 				{
-					StartX = coordinates[0],
-					StartY = coordinates[1],
-					EndX = coordinates[2],
-					EndY = coordinates[3]
-				};
-				switch (splitted[1])
-				{
-					case "on":
-						ins.Operation = b => true;
-						break;
-					case "off":
-						ins.Operation = b => false;
-						break;
-					default:
-						ins.Operation = b => !b;
-						break;
-				}
-
-				yield return ins;
-			}
+					Operation = r[1].Value,
+					StartX = int.Parse(r[2].Value),
+					StartY = int.Parse(r[3].Value),
+					EndX = int.Parse(r[4].Value),
+					EndY = int.Parse(r[5].Value)
+				});
 		}
 
 		private class Instruction
@@ -102,49 +109,7 @@ namespace AdventOfCode.Solutions._2015._6
 			public int EndX { get; set; }
 			public int StartY { get; set; }
 			public int EndY { get; set; }
-			public Func<bool, bool> Operation { get; set; }
-		}
-		
-		private class CorrectInstruction
-		{
-			public int StartX { get; set; }
-			public int EndX { get; set; }
-			public int StartY { get; set; }
-			public int EndY { get; set; }
-			public Func<int, int> Operation { get; set; }
-		}
-		
-		private static IEnumerable<CorrectInstruction> GetCorrectInstructions(IEnumerable<string> input)
-		{
-			foreach (var instruction in input)
-			{
-				var splitted = instruction.Split().ToArray();
-				var coordinates = Regex.Matches(instruction, @"\d*")
-					.Where(r => !string.IsNullOrWhiteSpace(r.Value))
-					.Select(r => int.Parse(r.Value))
-					.ToArray();
-				var ins = new CorrectInstruction
-				{
-					StartX = coordinates[0],
-					StartY = coordinates[1],
-					EndX = coordinates[2],
-					EndY = coordinates[3]
-				};
-				switch (splitted[1])
-				{
-					case "on":
-						ins.Operation = r => ++r;
-						break;
-					case "off":
-						ins.Operation = r => r == 0 ? 0 : --r;
-						break;
-					default:
-						ins.Operation = r => r + 2;
-						break;
-				}
-
-				yield return ins;
-			}
+			public string Operation { get; set; }
 		}
 	}
 }
