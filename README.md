@@ -12,7 +12,7 @@ My solutions for the Advent of Code
 | 5   | [:heavy_check_mark:][201505S] [Blog Post][201505]  | [:heavy_check_mark:][201605S]    | :x:    | :x:    |
 | 6   | [:heavy_check_mark:][201506S] [Blog Post][201506]  | [:heavy_check_mark:][201606S]    | :x:    | :x:    |
 | 7   | [:heavy_check_mark:][201507S] [Blog Post][201507]  | [:heavy_check_mark:][201607S]    | :x:    | :x:    |
-| 8   | [:heavy_check_mark:][201508S]    | [:heavy_check_mark:][201608S]    | :x:    | :x:    |
+| 8   | [:heavy_check_mark:][201508S] [Blog Post][201508]  | [:heavy_check_mark:][201608S]    | :x:    | :x:    |
 | 9   | [:heavy_check_mark:][201509S]    | [:heavy_check_mark:][201609S]    | :x:    | :x:    |
 | 10  | [:heavy_check_mark:][201510S]    | :x:    | :x:    | :x:    |
 | 11  | [:heavy_check_mark:][201511S]    | :x:    | :x:    | :x:    |
@@ -38,6 +38,7 @@ My solutions for the Advent of Code
 [201505]: https://dmatrix.dev/advent-of-code-year-2015-day-5/
 [201506]: https://dmatrix.dev/advent-of-code-year-2015-day-6/
 [201507]: https://dmatrix.dev/advent-of-code-year-2015-day-7/
+[201508]: https://dmatrix.dev/advent-of-code-year-2015-day-8/
 
 
 [201501S]: CSharp/Solutions/2015/1
