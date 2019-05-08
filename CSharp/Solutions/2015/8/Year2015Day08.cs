@@ -14,7 +14,7 @@ namespace AdventOfCode.Solutions._2015._8
 				numberOfCharsLiteral += line.Length;
 				var mutable = line.Substring(1, line.Length - 2);
 				var idx = 0;
-				while (idx <= mutable.Length - 1)
+				while (idx < mutable.Length)
 				{
 					switch (mutable[idx])
 					{
