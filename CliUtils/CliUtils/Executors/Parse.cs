@@ -28,7 +28,7 @@ namespace CliUtils.Executors
 		private static string HandleNode(IElement node)
 		{
 			var res = FuncMap[node.TagName](node.OuterHtml);
-			var middlewareTags = new [] {"SPAN", "A", "EM", "CODE"};
+			var middlewareTags = new [] {"SPAN", "A", "EM", "CODE", "P", "PRE"};
 			res = middlewareTags.Aggregate(res, (current, tag) => FuncMap[tag](current));
 			return res;
 		}

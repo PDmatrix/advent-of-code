@@ -11,7 +11,7 @@ namespace CliUtils.Executors
 		
 		public static string Paragraph(string html)
 		{
-			return Regex.Replace(html, @"^(<p>)|(<\/p>)$", string.Empty);
+			return Regex.Replace(html, @"(<p>)|(<\/p>)", string.Empty);
 		}
 		
 		public static string Code(string html)
@@ -55,7 +55,7 @@ namespace CliUtils.Executors
 		
 		public static string Pre(string html)
 		{
-			return Regex.Replace(html, @"^(<pre>)|(<\/pre>)$", string.Empty);
+			return Regex.Replace(html, @"(<pre(.*?)>)|(<\/pre>)", "\n");
 		}
 	}
 }
