@@ -1,4 +1,6 @@
 # advent-of-code
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPDmatrix%2Fadvent-of-code.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FPDmatrix%2Fadvent-of-code?ref=badge_shield)
+
 My solutions for the Advent of Code
 
 ## Stats
@@ -80,3 +82,7 @@ My solutions for the Advent of Code
 [201609S]: CSharp/Solutions/2016/9
 [201610S]: CSharp/Solutions/2016/10
 [201611S]: CSharp/Solutions/2016/11
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPDmatrix%2Fadvent-of-code.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPDmatrix%2Fadvent-of-code?ref=badge_large)
