@@ -40,14 +40,14 @@ namespace AdventOfCode.Solutions._2015._12
             return ProcessArray(JArray.Parse(input)).ToString();
         }
 
-        private static int ProcessArray(JToken jArray)
+        private static int ProcessArray(JArray array)
         {
-	        return jArray.Children().Sum(ProcessToken);
+	        return array.Children().Sum(ProcessToken);
         }
 
-        private static int ProcessValue(JValue jValue)
+        private static int ProcessValue(JValue value)
         {
-	        return int.TryParse(jValue.Value.ToString(), out var elem) ? elem : 0;
+	        return int.TryParse(value.Value.ToString(), out var elem) ? elem : 0;
         }
 
         private static int ProcessObject(JObject jObject)
@@ -64,16 +64,16 @@ namespace AdventOfCode.Solutions._2015._12
 	        return jObject.Properties().Sum(jProperty => ProcessToken(jProperty.Value));
         }
 
-        private static int ProcessToken(JToken jToken)
+        private static int ProcessToken(JToken token)
         {
-	        switch (jToken)
+	        switch (token)
 	        {
-		        case JArray jArray:
-			        return ProcessArray(jArray);
-		        case JObject jObjectCase:
-			        return ProcessObject(jObjectCase);
-		        case JValue jValue:
-			        return ProcessValue(jValue);
+		        case JArray array:
+			        return ProcessArray(array);
+		        case JObject jObject:
+			        return ProcessObject(jObject);
+		        case JValue value:
+			        return ProcessValue(value);
 	        }
 
 	        return 0;
