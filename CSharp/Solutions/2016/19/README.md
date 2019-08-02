@@ -7,7 +7,8 @@ Each Elf brings a present. They all sit in a circle, numbered starting with posi
 For example, with five Elves (numbered ```1``` to ```5```):
 
 
-```  1
+```  
+  1
 5   2
  4 3
 ```
@@ -36,35 +37,40 @@ For example, with five Elves (again numbered ```1``` to ```5```):
 
 * The Elves sit in a circle; Elf ```1``` goes first:
 
-```  *1*
+```  
+ *1*
 5   2
  4 3
 ```
 
 * Elves ```3``` and ```4``` are across the circle; Elf ```3```'s present is stolen, being the one to the left. Elf ```3``` leaves the circle, and the rest of the Elves move in:
 
-```  *1*           1
+```  
+ *1*          1
 5   2  -->  5   2
  4 -          4
 ```
 
 * Elf ```2``` steals from the Elf directly across the circle, Elf ```5```:
 
-```  1         1 
--   *2*  -->     2
+```  
+  1         1 
+-   *2*  -->   2
   4         4 
 ```
 
 * Next is Elf ```4``` who, choosing between Elves ```1``` and ```2```, steals from Elf ```1```:
 
-``` -          2  
+``` 
+  -           2  
     2  -->
  *4*          4
 ```
 
 * Finally, Elf ```2``` steals from Elf ```4```:
 
-``` *2*
+``` 
+ *2*
     -->  2  
  -
 ```
