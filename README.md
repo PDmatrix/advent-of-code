@@ -90,3 +90,4 @@ My solutions for the Advent of Code
 [201617S]: CSharp/Solutions/2016/17
 [201618S]: CSharp/Solutions/2016/18
 [201619S]: CSharp/Solutions/2016/19
+[201620S]: CSharp/Solutions/2016/20
