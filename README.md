@@ -25,7 +25,7 @@ My solutions for the Advent of Code
 | 18  | [:heavy_check_mark:][201518S]    | [:heavy_check_mark:][201618S]    | :x:    | :x:    |
 | 19  | [:heavy_check_mark:][201519S]    | [:heavy_check_mark:][201619S]    | :x:    | :x:    |
 | 20  | [:heavy_check_mark:][201520S]    | [:heavy_check_mark:][201620S]    | :x:    | :x:    |
-| 21  | [:heavy_check_mark:][201521S]    | :x:    | :x:    | :x:    |
+| 21  | [:heavy_check_mark:][201521S]    | [:heavy_check_mark:][201621S]    | :x:    | :x:    |
 | 22  | [:heavy_check_mark:][201522S]    | :x:    | :x:    | :x:    |
 | 23  | [:heavy_check_mark:][201523S]    | :x:    | :x:    | :x:    |
 | 24  | [:heavy_check_mark:][201524S]    | :x:    | :x:    | :x:    |
@@ -91,3 +91,5 @@ My solutions for the Advent of Code
 [201618S]: CSharp/Solutions/2016/18
 [201619S]: CSharp/Solutions/2016/19
 [201620S]: CSharp/Solutions/2016/20
+[201621S]: CSharp/Solutions/2016/21
+
