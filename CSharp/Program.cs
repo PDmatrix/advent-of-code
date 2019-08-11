@@ -22,8 +22,8 @@ namespace AdventOfCode
 			var solution = GetSolution(year, day);
 			var input = await GetInput(year, day);
 			var enumerable = input as string[] ?? input.ToArray();
-			Console.WriteLine($"First Part: {solution.Part1(enumerable)}");
-			Console.WriteLine($"Second Part: {solution.Part2(enumerable)}");
+			Console.WriteLine($"First Part: {solution.Part1(enumerable.ToArray())}");
+			Console.WriteLine($"Second Part: {solution.Part2(enumerable.ToArray())}");
 		}
 
 		private static ISolution GetSolution(int year, int day)
