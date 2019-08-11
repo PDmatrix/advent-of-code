@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using AdventOfCode.Common;
-using Microsoft.VisualBasic;
 
 namespace AdventOfCode.Solutions._2016._21
 {
