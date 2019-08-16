@@ -28,7 +28,7 @@ My solutions for the Advent of Code
 | 21  | [:heavy_check_mark:][201521S]    | [:heavy_check_mark:][201621S]    | :x:    | :x:    |
 | 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | :x:    | :x:    |
 | 23  | [:heavy_check_mark:][201523S]    | [:heavy_check_mark:][201623S]    | :x:    | :x:    |
-| 24  | [:heavy_check_mark:][201524S]    | :x:    | :x:    | :x:    |
+| 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | :x:    | :x:    |
 | 25  | [:heavy_check_mark:][201525S]    | :x:    | :x:    | :x:    |
 
 [201501]: https://dmatrix.dev/advent-of-code-year-2015-day-1/
@@ -94,3 +94,4 @@ My solutions for the Advent of Code
 [201621S]: CSharp/Solutions/2016/21
 [201622S]: CSharp/Solutions/2016/22
 [201623S]: CSharp/Solutions/2016/23
+[201624S]: CSharp/Solutions/2016/24
