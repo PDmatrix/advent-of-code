@@ -22,9 +22,10 @@ namespace CliUtils
 				options.Year, options.Day, options.Path, options.GenType);
 		}
 
-		private static async Task HandleError(IEnumerable<Error> errors)
+		private static Task HandleError(IEnumerable<Error> errors)
 		{
 			Console.WriteLine(string.Join(", ", errors));
+			return Task.CompletedTask;
 		}
 		
 		private static async Task Main(string[] args)
@@ -36,7 +37,5 @@ namespace CliUtils
 					async (GenerateOptions opts) => await HandleGenAsync(opts),
 					async errors => await HandleError(errors));
 		}
-
-		
 	}
 }

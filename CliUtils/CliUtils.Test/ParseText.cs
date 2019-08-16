@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using CliUtils.Executors;
 using Xunit;

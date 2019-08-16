@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace CliUtils.Executors
@@ -16,7 +17,16 @@ namespace CliUtils.Executors
 		
 		public static string Code(string html)
 		{
-			return Regex.Replace(html, @"(<code.*?>)|(<\/code>)", "```");
+			if (!Regex.IsMatch(html, @"(<code.*?>)|(<\/code>)"))
+				return html;
+			
+			var replaced = Regex.Replace(html, @"(<code.*?>)|(<\/code>)", "```");
+			return string.Join(string.Empty, replaced.Split("```").Select((r, idx) =>
+			{
+				if (idx % 2 == 0)
+					return r;
+				return r.Contains("\n") ? $"```\n{r}```" : $"```{r}```";
+			}));
 		}
 		
 		public static string Emphasis(string html)
@@ -35,10 +45,9 @@ namespace CliUtils.Executors
 		{
 			if (!Regex.IsMatch(html, @"(<a(.*))|(</a>)"))
 				return html;
-			
-			var href = Regex.Replace(html, "((.*)<a(.*)href=\")|(\"(.*)a>(.*))", string.Empty);
+			var hrefMatch = Regex.Match(html, "href=\"(?<s>.+)\"");
 			var res = Regex.Replace(html, "(<a(.*?)>)", "[")
-				.Replace("</a>", $"]({href})");
+				.Replace("</a>", $"]({hrefMatch.Groups["s"].Value})");
 			return res;
 		}
 		
@@ -47,9 +56,13 @@ namespace CliUtils.Executors
 			if (!Regex.IsMatch(html, @"(<span(.*))|(</span>)"))
 				return html;
 
-			var title = Regex.Replace(html.Trim('\n'), "((.*)<span(.*)title=\")|(\"(.*)span>(.*))", string.Empty);
-			var res = Regex.Replace(html, "(<span(.*?)>)", string.Empty)
-				.Replace("</span>", $"({title})");
+			var titleMatch = Regex.Match(html, "title=\"(?<s>.+)\"");
+			var res = html;
+			if (titleMatch.Success)
+				res = Regex.Replace(html, "<span title=\"(.+)\">", $"({titleMatch.Groups["s"].Value})");
+			
+			res = Regex.Replace(res, "(<span(.*?)>)", string.Empty)
+				.Replace("</span>", string.Empty);
 			return res;
 		}
 		

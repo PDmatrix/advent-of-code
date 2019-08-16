@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using AngleSharp.Dom;
@@ -33,15 +31,14 @@ namespace CliUtils.Executors
 			return res;
 		}
 		
-		public static async Task<string> GetChallengeAsync(int year, int day)
+		public static Task<string> GetChallengeAsync(int year, int day)
 		{
-			return await Custom.HttpClient.Value.GetStringAsync(Custom.GetChallengeUrl(year, day));
+			return Custom.HttpClient.Value.GetStringAsync(Custom.GetChallengeUrl(year, day));
 		}
 		
-		public static async Task<string> GetInputAsync(int year, int day)
+		public static Task<string> GetInputAsync(int year, int day)
 		{
-			return await Custom.HttpClient.Value.GetStringAsync(
-				$"{Custom.GetChallengeUrl(year, day)}/input");
+			return Custom.HttpClient.Value.GetStringAsync($"{Custom.GetChallengeUrl(year, day)}/input");
 		}
 		
 		// TODO: Rewrite with async streams in C# 8
