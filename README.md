@@ -3,7 +3,7 @@ My solutions for the Advent of Code
 
 ## Stats
 
-| Day |   :tada:2015:tada:    |  2016  |  2017  |  2018  |
+| Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  2017  |  2018  |
 |-----|-----------------------|--------|--------|--------|
 | 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | :x:    | :x:    |
 | 2   | [:heavy_check_mark:][201502S] [Blog Post][201502]  | [:heavy_check_mark:][201602S]    | :x:    | :x:    |
@@ -29,7 +29,7 @@ My solutions for the Advent of Code
 | 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | :x:    | :x:    |
 | 23  | [:heavy_check_mark:][201523S]    | [:heavy_check_mark:][201623S]    | :x:    | :x:    |
 | 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | :x:    | :x:    |
-| 25  | [:heavy_check_mark:][201525S]    | :x:    | :x:    | :x:    |
+| 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | :x:    | :x:    |
 
 [201501]: https://dmatrix.dev/advent-of-code-year-2015-day-1/
 [201502]: https://dmatrix.dev/advent-of-code-year-2015-day-2/
@@ -95,3 +95,5 @@ My solutions for the Advent of Code
 [201622S]: CSharp/Solutions/2016/22
 [201623S]: CSharp/Solutions/2016/23
 [201624S]: CSharp/Solutions/2016/24
+[201625S]: CSharp/Solutions/2016/25
+
