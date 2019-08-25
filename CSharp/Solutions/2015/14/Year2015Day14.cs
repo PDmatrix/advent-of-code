@@ -7,6 +7,42 @@ namespace AdventOfCode.Solutions._2015._14
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day14 : ISolution
 	{
+		public string Part1(IEnumerable<string> lines)
+     	{
+     		var deers = GetDeers(lines);
+     		var enumerable = deers as Deer[] ?? deers.ToArray();
+     		for (var i = 0; i < 2503; i++)
+     		{
+     			foreach (var deer in enumerable)
+     			{
+     				deer.Tick();
+     			}
+     		}
+     		return enumerable.Select(r => r.TravelledDistance).Max().ToString();
+     	}
+     
+     	public string Part2(IEnumerable<string> lines)
+     	{
+     		var deers = GetDeers(lines);
+     		var enumerable = deers as Deer[] ?? deers.ToArray();
+     		for (var i = 0; i < 2503; i++)
+     		{
+     			foreach (var deer in enumerable)
+     			{
+     				deer.Tick();
+     			}
+ 
+     			var max = enumerable.Select(r => r.TravelledDistance).Max();
+     			enumerable = enumerable.Select(r =>
+     				{
+     					if(r.TravelledDistance == max)
+     						r.Points++;
+     					return r;
+     				}).ToArray();
+     		}
+     		return enumerable.Select(r => r.Points).Max().ToString();
+     	}
+        
 		private class Deer
 		{
 			private readonly int _speed;
@@ -57,42 +93,6 @@ namespace AdventOfCode.Solutions._2015._14
 			return lines
 				.Select(r => r.Split(" "))
 				.Select(r => new Deer(int.Parse(r[3]), int.Parse(r[6]), int.Parse(r[13])));
-		}
-		
-		public string Part1(IEnumerable<string> lines)
-		{
-			var deers = GetDeers(lines);
-			var enumerable = deers as Deer[] ?? deers.ToArray();
-			for (var i = 0; i < 2503; i++)
-			{
-				foreach (var deer in enumerable)
-				{
-					deer.Tick();
-				}
-			}
-			return enumerable.Select(r => r.TravelledDistance).Max().ToString();
-		}
-
-		public string Part2(IEnumerable<string> lines)
-		{
-			var deers = GetDeers(lines);
-			var enumerable = deers as Deer[] ?? deers.ToArray();
-			for (var i = 0; i < 2503; i++)
-			{
-				foreach (var deer in enumerable)
-				{
-					deer.Tick();
-				}
-
-				var max = enumerable.Select(r => r.TravelledDistance).Max();
-				enumerable = enumerable.Select(r =>
-					{
-						if(r.TravelledDistance == max)
-							r.Points++;
-						return r;
-					}).ToArray();
-			}
-			return enumerable.Select(r => r.Points).Max().ToString();
 		}
 	}
 }
