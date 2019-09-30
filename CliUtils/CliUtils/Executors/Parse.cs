@@ -30,16 +30,12 @@ namespace CliUtils.Executors
 			res = middlewareTags.Aggregate(res, (current, tag) => FuncMap[tag](current));
 			return res;
 		}
-		
+
 		public static Task<string> GetChallengeAsync(int year, int day)
-		{
-			return Custom.HttpClient.Value.GetStringAsync(Custom.GetChallengeUrl(year, day));
-		}
+			=> Custom.HttpClient.Value.GetStringAsync(Custom.GetChallengeUrl(year, day));
 		
 		public static Task<string> GetInputAsync(int year, int day)
-		{
-			return Custom.HttpClient.Value.GetStringAsync($"{Custom.GetChallengeUrl(year, day)}/input");
-		}
+			=> Custom.HttpClient.Value.GetStringAsync($"{Custom.GetChallengeUrl(year, day)}/input");
 		
 		// TODO: Rewrite with async streams in C# 8
 		public static async Task<string> HtmlToMdAsync(string html)
