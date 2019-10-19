@@ -16,7 +16,7 @@ My solutions for the Advent of Code
 | 9   | [:heavy_check_mark:][201509S] [Blog Post][201509]  | [:heavy_check_mark:][201609S]    | [:heavy_check_mark:][201709S]    | :x:    |
 | 10  | [:heavy_check_mark:][201510S] [Blog Post][201510]  | [:heavy_check_mark:][201610S]    | [:heavy_check_mark:][201710S]    | :x:    |
 | 11  | [:heavy_check_mark:][201511S] [Blog Post][201511]  | [:heavy_exclamation_mark:][201611S]    | [:heavy_check_mark:][201711S]     | :x:    |
-| 12  | [:heavy_check_mark:][201512S] [Blog Post][201512]  | [:heavy_check_mark:][201612S]    | :x:    | :x:    |
+| 12  | [:heavy_check_mark:][201512S] [Blog Post][201512]  | [:heavy_check_mark:][201612S]    | [:heavy_check_mark:][201712S]    | :x:    |
 | 13  | [:heavy_check_mark:][201513S] [Blog Post][201513]  | [:heavy_check_mark:][201613S]    | :x:    | :x:    |
 | 14  | [:heavy_check_mark:][201514S]    | [:heavy_check_mark:][201614S]    | :x:    | :x:    |
 | 15  | [:heavy_check_mark:][201515S]    | [:heavy_check_mark:][201615S]    | :x:    | :x:    |
