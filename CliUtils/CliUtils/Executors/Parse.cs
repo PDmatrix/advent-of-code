@@ -37,7 +37,6 @@ namespace CliUtils.Executors
 		public static Task<string> GetInputAsync(int year, int day)
 			=> Custom.HttpClient.Value.GetStringAsync($"{Custom.GetChallengeUrl(year, day)}/input");
 		
-		// TODO: Rewrite with async streams in C# 8
 		public static async Task<string> HtmlToMdAsync(string html)
 		{
 			var parser = new HtmlParser();
