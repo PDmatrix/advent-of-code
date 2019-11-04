@@ -20,7 +20,7 @@ My solutions for the Advent of Code
 | 13  | [:heavy_check_mark:][201513S] [Blog Post][201513]  | [:heavy_check_mark:][201613S]    | [:heavy_check_mark:][201713S]    | :x:    |
 | 14  | [:heavy_check_mark:][201514S]    | [:heavy_check_mark:][201614S]    | [:heavy_check_mark:][201714S]    | :x:    |
 | 15  | [:heavy_check_mark:][201515S]    | [:heavy_check_mark:][201615S]    | [:heavy_check_mark:][201715S]    | :x:    |
-| 16  | [:heavy_check_mark:][201516S]    | [:heavy_check_mark:][201616S]    | :x:    | :x:    |
+| 16  | [:heavy_check_mark:][201516S]    | [:heavy_check_mark:][201616S]    | [:heavy_check_mark:][201716S]    | :x:    |
 | 17  | [:heavy_check_mark:][201517S]    | [:heavy_check_mark:][201617S]    | :x:    | :x:    |
 | 18  | [:heavy_check_mark:][201518S]    | [:heavy_check_mark:][201618S]    | :x:    | :x:    |
 | 19  | [:heavy_check_mark:][201519S]    | [:heavy_check_mark:][201619S]    | :x:    | :x:    |
