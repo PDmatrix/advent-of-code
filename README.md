@@ -28,7 +28,7 @@ My solutions for the Advent of Code
 | 21  | [:heavy_check_mark:][201521S]    | [:heavy_check_mark:][201621S]    | [:heavy_check_mark:][201721S]    | :x:    |
 | 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | [:heavy_check_mark:][201722S]    | :x:    |
 | 23  | [:heavy_check_mark:][201523S]    | [:heavy_check_mark:][201623S]    | [:heavy_check_mark:][201723S]    | :x:    |
-| 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | :x:    | :x:    |
+| 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | [:heavy_check_mark:][201724S]    | :x:    |
 | 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | :x:    | :x:    |
 
 [201501]: https://dmatrix.dev/advent-of-code-year-2015-day-1/
