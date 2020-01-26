@@ -4,7 +4,7 @@ My solutions for the Advent of Code
 ## Stats
 
 | Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  :tada:2017:tada:  |  2018  |  2019  |
-|-----|-----------------------|--------|--------|--------|
+|-----|-----------------------|--------|--------|--------|--------|
 | 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | [:heavy_check_mark:][201701S]    | :x:    |  :x:  |
 | 2   | [:heavy_check_mark:][201502S] [Blog Post][201502]  | [:heavy_check_mark:][201602S]    | [:heavy_check_mark:][201702S]    | :x:    |  :x:  |
 | 3   | [:heavy_check_mark:][201503S] [Blog Post][201503]  | [:heavy_check_mark:][201603S]    | [:heavy_check_mark:][201703S]    | :x:    |  :x:  |
