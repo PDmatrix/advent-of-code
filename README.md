@@ -3,7 +3,7 @@ My solutions for the Advent of Code
 
 ## Stats
 
-| Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  2017  |  2018  |
+| Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  :tada:2017:tada:  |  2018  |
 |-----|-----------------------|--------|--------|--------|
 | 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | [:heavy_check_mark:][201701S]    | :x:    |
 | 2   | [:heavy_check_mark:][201502S] [Blog Post][201502]  | [:heavy_check_mark:][201602S]    | [:heavy_check_mark:][201702S]    | :x:    |
@@ -29,7 +29,7 @@ My solutions for the Advent of Code
 | 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | [:heavy_check_mark:][201722S]    | :x:    |
 | 23  | [:heavy_check_mark:][201523S]    | [:heavy_check_mark:][201623S]    | [:heavy_check_mark:][201723S]    | :x:    |
 | 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | [:heavy_check_mark:][201724S]    | :x:    |
-| 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | :x:    | :x:    |
+| 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | [:heavy_check_mark:][201725S]    | :x:    |
 
 [201501]: https://dmatrix.dev/advent-of-code-year-2015-day-1/
 [201502]: https://dmatrix.dev/advent-of-code-year-2015-day-2/
