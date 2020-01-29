@@ -6,19 +6,16 @@ namespace CliUtils.Executors
 	public static class ParseTags
 	{
 		public static string Header(string html)
-		{
-			return $"# {Regex.Replace(html, @"^(<h2.*?>)|(<\/h2>)$", string.Empty)}";
-		}
+			=> $"# {Regex.Replace(html, @"^(<h2.*?>)|(<\/h2>)$", string.Empty)}";
 		
 		public static string Paragraph(string html)
-		{
-			return Regex.Replace(html, @"(<p>)|(<\/p>)", string.Empty);
-		}
+			=> Regex.Replace(html, @"(<p>)|(<\/p>)", string.Empty);
 		
 		public static string Code(string html)
 		{
 			if (!Regex.IsMatch(html, @"(<code.*?>)|(<\/code>)"))
 				return html;
+			
 			
 			var replaced = Regex.Replace(html, @"(<code.*?>)|(<\/code>)", "```");
 			return string.Join(string.Empty, replaced.Split("```").Select((r, idx) =>
@@ -30,25 +27,22 @@ namespace CliUtils.Executors
 		}
 		
 		public static string Emphasis(string html)
-		{
-			return Regex.Replace(html, "(<em(>|\\sclass=\"star\">))|(<\\/em>)", "*");
-		}
+			=> Regex.Replace(html, "(<em(>|\\sclass=\"star\">))|(<\\/em>)", "*");
 		
 		public static string UnorderedList(string html)
-		{
-			return Regex.Replace(html, @"(<ul>)|(<\/ul>)", string.Empty)
+			=> Regex.Replace(html, @"(<ul>)|(<\/ul>)", string.Empty)
 				.Replace(@"<li>", "* ")
 				.Replace("</li>", string.Empty);
-		}
 		
 		public static string Link(string html)
 		{
 			if (!Regex.IsMatch(html, @"(<a(.*))|(</a>)"))
 				return html;
+			
 			var hrefMatch = Regex.Match(html, "href=\"(?<s>.+)\"");
-			var res = Regex.Replace(html, "(<a(.*?)>)", "[")
+			
+			return Regex.Replace(html, "(<a(.*?)>)", "[")
 				.Replace("</a>", $"]({hrefMatch.Groups["s"].Value})");
-			return res;
 		}
 		
 		public static string Span(string html)
@@ -63,12 +57,11 @@ namespace CliUtils.Executors
 			
 			res = Regex.Replace(res, "(<span(.*?)>)", string.Empty)
 				.Replace("</span>", string.Empty);
+			
 			return res;
 		}
 		
 		public static string Pre(string html)
-		{
-			return Regex.Replace(html, @"(<pre(.*?)>)|(<\/pre>)", "\n");
-		}
+			=> Regex.Replace(html, @"(<pre(.*?)>)|(<\/pre>)", "\n");
 	}
 }

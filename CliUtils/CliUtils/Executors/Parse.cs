@@ -43,6 +43,7 @@ namespace CliUtils.Executors
 			var document = await parser.ParseAsync(html);
 			var children = 
 				document.QuerySelectorAll("article").SelectMany(r => r.Children).ToArray();
+			
 			var sb = new StringBuilder();
 			foreach (var child in children)
 			{
@@ -51,6 +52,7 @@ namespace CliUtils.Executors
 			}
 
 			sb.Remove(sb.Length - 2, 2);
+			
 			return sb.ToString();
 		} 
 	}

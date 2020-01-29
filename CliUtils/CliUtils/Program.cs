@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using CliUtils.Executors;
 using CliUtils.Options;
 using CommandLine;
+using CommandLine.Text;
 
 namespace CliUtils
 {
@@ -25,17 +26,19 @@ namespace CliUtils
 		private static Task HandleError(IEnumerable<Error> errors)
 		{
 			Console.WriteLine(string.Join(", ", errors));
+			
 			return Task.CompletedTask;
 		}
 		
-		private static async Task Main(string[] args)
+		private static Task Main(string[] args)
 		{
 			var parser = new Parser(cfg => cfg.CaseInsensitiveEnumValues = true);
-			await parser.ParseArguments<ParseOptions, GenerateOptions>(args)
+			
+			return parser.ParseArguments<ParseOptions, GenerateOptions>(args)
 				.MapResult(
-					async (ParseOptions opts) => await HandleParseAsync(opts),
-					async (GenerateOptions opts) => await HandleGenAsync(opts),
-					async errors => await HandleError(errors));
+					(ParseOptions opts) => HandleParseAsync(opts),
+					(GenerateOptions opts) => HandleGenAsync(opts),
+					HandleError);
 		}
 	}
 }
