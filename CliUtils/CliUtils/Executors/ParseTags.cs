@@ -22,6 +22,7 @@ namespace CliUtils.Executors
 			{
 				if (idx % 2 == 0)
 					return r;
+				
 				return r.Contains("\n") ? $"```\n{r}```" : $"```{r}```";
 			}));
 		}
@@ -50,12 +51,12 @@ namespace CliUtils.Executors
 			if (!Regex.IsMatch(html, @"(<span(.*))|(</span>)"))
 				return html;
 
-			var titleMatch = Regex.Match(html, "title=\"(?<s>.+)\"");
+			var titleMatch = Regex.Match(html, "title=\"(?<s>.+?)\"");
 			var res = html;
 			if (titleMatch.Success)
-				res = Regex.Replace(html, "<span title=\"(.+)\">", $"({titleMatch.Groups["s"].Value})");
+				res = Regex.Replace(html, "<span title=\"(.+?)\">", $"({titleMatch.Groups["s"].Value}) ");
 			
-			res = Regex.Replace(res, "(<span(.*?)>)", string.Empty)
+			res = Regex.Replace(res, "(<span(.+?)>)", string.Empty)
 				.Replace("</span>", string.Empty);
 			
 			return res;

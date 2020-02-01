@@ -11,12 +11,15 @@ namespace CliUtils.Executors
 		private static async Task GenerateReadmeAsync(int year, int day, string path)
 		{
 			var md = await Parse.HtmlToMdAsync(await Parse.GetChallengeAsync(year, day));
-			
-			md = md.Replace("&lt;", "<").Replace("&gt;", ">");
-			
+
+			md = md
+				.Replace("&lt;", "<")
+				.Replace("&gt;", ">")
+				.Replace("&nbsp;", " ");
+
 			await File.WriteAllTextAsync(path, md, Encoding.UTF8);
 		}
-		
+
 		private static async Task GenerateInputAsync(int year, int day, string path)
 		{
 			var input = await Parse.GetInputAsync(year, day);
