@@ -11,7 +11,7 @@ My solutions for the Advent of Code
 | 4   | [:heavy_check_mark:][201504S] [Blog Post][201504]  | [:heavy_check_mark:][201604S]    | [:heavy_check_mark:][201704S]    | [:heavy_check_mark:][201804S]    |  :x:  |
 | 5   | [:heavy_check_mark:][201505S] [Blog Post][201505]  | [:heavy_check_mark:][201605S]    | [:heavy_check_mark:][201705S]    | [:heavy_check_mark:][201805S]    |  :x:  |
 | 6   | [:heavy_check_mark:][201506S] [Blog Post][201506]  | [:heavy_check_mark:][201606S]    | [:heavy_check_mark:][201706S]    | [:heavy_check_mark:][201806S]    |  :x:  |
-| 7   | [:heavy_check_mark:][201507S] [Blog Post][201507]  | [:heavy_check_mark:][201607S]    | [:heavy_check_mark:][201707S]    | :x:    |  :x:  |
+| 7   | [:heavy_check_mark:][201507S] [Blog Post][201507]  | [:heavy_check_mark:][201607S]    | [:heavy_check_mark:][201707S]    | [:heavy_check_mark:][201807S]    |  :x:  |
 | 8   | [:heavy_check_mark:][201508S] [Blog Post][201508]  | [:heavy_check_mark:][201608S]    | [:heavy_check_mark:][201708S]    | :x:    |  :x:  |
 | 9   | [:heavy_check_mark:][201509S] [Blog Post][201509]  | [:heavy_check_mark:][201609S]    | [:heavy_check_mark:][201709S]    | :x:    |  :x:  |
 | 10  | [:heavy_check_mark:][201510S] [Blog Post][201510]  | [:heavy_check_mark:][201610S]    | [:heavy_check_mark:][201710S]    | :x:    |  :x:  |
