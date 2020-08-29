@@ -114,11 +114,11 @@ namespace AdventOfCode.Solutions._2015._21
 			while (true)
 			{
 				DealDamage(hero, enemy);
-				if (enemy.HP <= 0)
+				if (enemy.Hp <= 0)
 					return true;
 				
 				DealDamage(enemy, hero);
-				if (hero.HP <= 0)
+				if (hero.Hp <= 0)
 					return false;
 			}
 		}
@@ -126,7 +126,7 @@ namespace AdventOfCode.Solutions._2015._21
 		private static void DealDamage(Character from, Character to)
 		{
 			var damage = Math.Max(from.Damage - to.Defense, 1);
-			to.HP -= damage;
+			to.Hp -= damage;
 		}
 	}
 }

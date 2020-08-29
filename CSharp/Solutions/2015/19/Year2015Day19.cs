@@ -10,8 +10,8 @@ namespace AdventOfCode.Solutions._2015._19
 	{
 		private class Replacement
 		{
-			public string From { get; set; }
-			public string To { get; set; }
+			public string From { get; set; } = null!;
+			public string To { get; set; } = null!;
 		}
 		
 		private static IEnumerable<Replacement> GetReplacements(IEnumerable<string> lines)

@@ -24,9 +24,9 @@ namespace AdventOfCode.Solutions._2015._12
             var input = GetInput(lines);
             var matches = Regex.Matches(input, @"-?\d+");
             var sum = 0;
-            foreach (Match match in matches)
+            foreach (Match? match in matches)
             {
-                if (int.TryParse(match.Value, out var result))
+                if (int.TryParse(match?.Value, out var result))
                     sum += result;
                 else
                     throw new Exception("Bad string");

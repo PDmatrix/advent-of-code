@@ -109,7 +109,7 @@ namespace AdventOfCode.Solutions._2015._6
 			public int EndX { get; set; }
 			public int StartY { get; set; }
 			public int EndY { get; set; }
-			public string Operation { get; set; }
+			public string Operation { get; set; } = null!;
 		}
 	}
 }

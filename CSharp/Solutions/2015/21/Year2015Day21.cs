@@ -11,14 +11,14 @@ namespace AdventOfCode.Solutions._2015._21
 		{
 			var enemy = GetEnemy(input);
 			var winners = Game.ExecuteUntilWin(enemy);
-			return winners.Min(r => r.EqipmentCost).ToString();
+			return winners.Min(r => r.EquipmentCost).ToString();
 		}
 
 		public string Part2(IEnumerable<string> input)
 		{
 			var enemy = GetEnemy(input);
 			var losers = Game.ExecuteUntilLose(enemy);
-			return losers.Max(r => r.EqipmentCost).ToString();
+			return losers.Max(r => r.EquipmentCost).ToString();
 		}
 		
 		private static Character GetEnemy(IEnumerable<string> input)
@@ -29,7 +29,7 @@ namespace AdventOfCode.Solutions._2015._21
 			var defense = int.Parse(enumerable[2].Split(":")[1].Trim());
 			return new Character
 			{
-				HP = hp,
+				Hp = hp,
 				Armor = new Armor { Defense = defense },
 				Weapon = new Weapon { Damage = damage }
 			};

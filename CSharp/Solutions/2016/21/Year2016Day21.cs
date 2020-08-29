@@ -146,7 +146,7 @@ namespace AdventOfCode.Solutions._2016._21
             {
                 var last = ll.Last;
                 ll.RemoveLast();
-                ll.AddFirst(last);
+                ll.AddFirst(last!);
             }
 
             return new string(ll.ToArray());
@@ -159,7 +159,7 @@ namespace AdventOfCode.Solutions._2016._21
             {
                 var first = ll.First;
                 ll.RemoveFirst();
-                ll.AddLast(first);
+                ll.AddLast(first!);
             }
 
             return new string(ll.ToArray());

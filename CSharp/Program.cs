@@ -41,8 +41,10 @@ namespace AdventOfCode
 				});
 			if (solutionType == null)
 				throw new Exception("Solution not found");
-			
-			return (ISolution)Activator.CreateInstance(solutionType);
+
+			var instance = Activator.CreateInstance(solutionType) ?? throw new Exception();
+
+			return (ISolution) instance;
 		}
 		
 		private static async Task<IEnumerable<string>> GetInput(int year, int day)

@@ -101,7 +101,7 @@ namespace AdventOfCode.Solutions._2015._22
 			}
 		}
 		
-		private static Spell GetAvailableSpell(Character hero, int bestResult)
+		private static Spell? GetAvailableSpell(Character hero, int bestResult)
 		{
 			
 			var options = Spells.Where(s => s.Cost <= hero.Mana && 
@@ -112,7 +112,7 @@ namespace AdventOfCode.Solutions._2015._22
 			
 			var rand = new Random();
 			var t = options[rand.Next(options.Count)].GetType();
-			var spell = (Spell)Activator.CreateInstance(t);
+			var spell = (Spell)Activator.CreateInstance(t)!;
 			return spell;
 		}
 	}

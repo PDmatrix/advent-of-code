@@ -2,7 +2,7 @@ namespace AdventOfCode.Solutions._2015._21
 {
 	public class Character
 	{
-		public int HP { get; set; } = 100;
+		public int Hp { get; set; } = 100;
 
 		public int Damage
 		{
@@ -22,24 +22,24 @@ namespace AdventOfCode.Solutions._2015._21
 			get
 			{
 				var defense = Armor?.Defense ?? 0;
-				if (LeftRing?.RingBonus == RingBonus.Defense)
+				if (LeftRing.RingBonus == RingBonus.Defense)
 					defense += LeftRing.Bonus;
-				if (RightRing?.RingBonus == RingBonus.Defense)
+				if (RightRing.RingBonus == RingBonus.Defense)
 					defense += RightRing.Bonus;
 				return defense;
 			}
 		}
 
-		public int EqipmentCost => 
+		public int EquipmentCost => 
 			Weapon.Cost 
 			+ (Armor?.Cost ?? 0) 
 			+ (LeftRing?.Cost ?? 0) 
 			+ (RightRing?.Cost ?? 0);
 
-		public Armor Armor { get; set; }
-		public Weapon Weapon { get; set; }
-		public Ring LeftRing { get; set; }
-		public Ring RightRing { get; set; }
+		public Armor Armor { get; set; } = null!;
+		public Weapon Weapon { get; set; } = null!;
+		public Ring LeftRing { get; set; } = null!;
+		public Ring RightRing { get; set; } = null!;
 
 		public Character Clone()
 		{
@@ -47,7 +47,7 @@ namespace AdventOfCode.Solutions._2015._21
 			{
 				Armor = Armor,
 				Weapon = Weapon,
-				HP = HP,
+				Hp = Hp,
 				LeftRing = LeftRing,
 				RightRing = RightRing
 			};

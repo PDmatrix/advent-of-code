@@ -99,11 +99,11 @@ namespace AdventOfCode.Solutions._2017._8
 		
 		private class Instruction
 		{
-			public string Register { get; set; }
-			public string Operation { get; set; }
+			public string Register { get; set; } = null!;
+			public string Operation { get; set; } = null!;
 			public int ByValue { get; set; }
-			public string ConditionalRegister { get; set; }
-			public Func<Expression, Expression, Expression> ConditionalOperator { get; set; }
+			public string ConditionalRegister { get; set; } = null!;
+			public Func<Expression, Expression, Expression> ConditionalOperator { get; set; } = null!;
 			public int ConditionalValue { get; set; }
 		}
 	}

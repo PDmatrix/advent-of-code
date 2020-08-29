@@ -20,7 +20,7 @@ namespace AdventOfCode.Solutions._2017._7
 		{
 			var towers = GetTowers(input).ToList();
 			BuildTowerTree(towers);
-			return GetUnbalancedWeight(GetBottomTower(towers))?.ToString();
+			return GetUnbalancedWeight(GetBottomTower(towers))?.ToString()!;
 		}
 		
 		private static Tower GetBottomTower(IEnumerable<Tower> towers)
@@ -93,10 +93,10 @@ namespace AdventOfCode.Solutions._2017._7
 
 		private class Tower
 		{
-			public string Name { get; set; }
+			public string Name { get; set; } = null!;
 			public int Weight { get; set; }
-			public ICollection<Tower> Parents { get; set; }
-			public ICollection<Tower> Children { get; set; }
+			public ICollection<Tower> Parents { get; set; } = null!;
+			public ICollection<Tower> Children { get; set; } = null!;
 		}
 	}
 }

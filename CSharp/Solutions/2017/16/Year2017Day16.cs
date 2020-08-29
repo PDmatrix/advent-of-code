@@ -11,7 +11,8 @@ namespace AdventOfCode.Solutions._2017._16
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day16 : ISolution
 	{
-		private char[] _state;
+		private char[] _state = null!;
+		
 		public string Part1(IEnumerable<string> input)
 		{
 			const string start = "abcdefghijklmnop";

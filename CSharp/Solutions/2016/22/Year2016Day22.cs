@@ -30,8 +30,8 @@ namespace AdventOfCode.Solutions._2016._22
             {
                 foreach (var node1 in nodes)
                 {
-                    var notEmpty = node.Used != 0;
-                    var notTheSame = node.X != node1.X || node.Y != node1.Y;
+                    var notEmpty = node!.Used != 0;
+                    var notTheSame = node.X != node1!.X || node.Y != node1.Y;
                     var fit = node.Used <= node1.Available;
                     res += Convert.ToInt32(notEmpty && notTheSame && fit);
                 }
@@ -59,7 +59,7 @@ namespace AdventOfCode.Solutions._2016._22
             var prevX = -1;
             foreach (var node in nodes)
             {
-                if (node.X != prevX)
+                if (node!.X != prevX)
                 {
                     prevX = node.X;
                     Console.WriteLine();
@@ -82,8 +82,6 @@ namespace AdventOfCode.Solutions._2016._22
             public int Y { get; set; }
             public int Used { get; set; }
             public int Available { get; set; }
-            
-            public int Size => Used + Available;
         }
     }
 }

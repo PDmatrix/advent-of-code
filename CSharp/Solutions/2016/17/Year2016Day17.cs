@@ -38,7 +38,7 @@ namespace AdventOfCode.Solutions._2016._17
         private class State
         {
             public (int x, int y) Position { get; set; }
-            public string Path { get; set; }
+            public string Path { get; set; } = null!;
         }
         
         private static IEnumerable<T> Bfs<T>(Func<T, bool> isSolution, Func<T, IEnumerable<T>> getChildren, T start)

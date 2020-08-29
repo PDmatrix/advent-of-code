@@ -119,7 +119,7 @@ namespace AdventOfCode.Solutions._2015._23
 
 		private class Instruction
 		{
-			public Func<(int, int)> Operation { get; set; }
+			public Func<(int, int)> Operation { get; set; } = null!;
 		}
 	}
 }

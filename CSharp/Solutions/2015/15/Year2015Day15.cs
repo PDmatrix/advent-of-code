@@ -10,7 +10,7 @@ namespace AdventOfCode.Solutions._2015._15
 	{
 		private class Ingredient
 		{
-			public string Name { get; set; }
+			public string Name { get; set; } = null!;
 			public int Capacity { get; set; }
 			public int Durability { get; set; }
 			public int Flavor { get; set; }
