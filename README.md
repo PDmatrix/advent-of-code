@@ -13,7 +13,7 @@ My solutions for the Advent of Code
 | 6   | [:heavy_check_mark:][201506S] [Blog Post][201506]  | [:heavy_check_mark:][201606S]    | [:heavy_check_mark:][201706S]    | [:heavy_check_mark:][201806S]    |  :x:  |
 | 7   | [:heavy_check_mark:][201507S] [Blog Post][201507]  | [:heavy_check_mark:][201607S]    | [:heavy_check_mark:][201707S]    | [:heavy_check_mark:][201807S]    |  :x:  |
 | 8   | [:heavy_check_mark:][201508S] [Blog Post][201508]  | [:heavy_check_mark:][201608S]    | [:heavy_check_mark:][201708S]    | [:heavy_check_mark:][201808S]    |  :x:  |
-| 9   | [:heavy_check_mark:][201509S] [Blog Post][201509]  | [:heavy_check_mark:][201609S]    | [:heavy_check_mark:][201709S]    | :x:    |  :x:  |
+| 9   | [:heavy_check_mark:][201509S] [Blog Post][201509]  | [:heavy_check_mark:][201609S]    | [:heavy_check_mark:][201709S]    | [:heavy_check_mark:][201809S]    |  :x:  |
 | 10  | [:heavy_check_mark:][201510S] [Blog Post][201510]  | [:heavy_check_mark:][201610S]    | [:heavy_check_mark:][201710S]    | :x:    |  :x:  |
 | 11  | [:heavy_check_mark:][201511S] [Blog Post][201511]  | [:heavy_exclamation_mark:][201611S]    | [:heavy_check_mark:][201711S]     | :x:    |  :x:  |
 | 12  | [:heavy_check_mark:][201512S] [Blog Post][201512]  | [:heavy_check_mark:][201612S]    | [:heavy_check_mark:][201712S]    | :x:    |  :x:  |
