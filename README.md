@@ -3,6 +3,10 @@ My solutions for the Advent of Code
 
 ## Stats
 
+You can click on check mark to find solution for that day
+
+---
+
 | Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  :tada:2017:tada:  |  2018  |  2019  |
 |-----|-----------------------|--------|--------|--------|--------|
 | 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | [:heavy_check_mark:][201701S]    | [:heavy_check_mark:][201801S]    |  :x:  |
