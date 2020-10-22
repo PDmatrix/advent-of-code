@@ -14,7 +14,7 @@ Second, you discover the *activation system* (your puzzle input) for the time tr
 
 If you can cause the activation system to *halt* at a specific moment, maybe you can make the device send you so far back in time that you cause an [integer underflow](https://cwe.mitre.org/data/definitions/191.html) *in time itself* and wrap around back to your current time!
 
-The device executes the program as specified in [manual section one](16">manual section one</a> and <a href="19) and [manual section two](16">manual section one</a> and <a href="19).
+The device executes the program as specified in [manual section one](https://adventofcode.com/2018/day/16) and [manual section two](https://adventofcode.com/2018/day/19)
 
 Your goal is to figure out how the program works and cause it to halt.  You can only control *register ```0```*; every other register begins at ```0``` as usual.
 
