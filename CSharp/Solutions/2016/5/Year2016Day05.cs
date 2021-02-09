@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2016._5
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day05 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var doorId = input.First();
             var password = "";
@@ -24,7 +24,7 @@ namespace AdventOfCode.Solutions._2016._5
             return password;
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var doorId = input.First();
             var password = new string[8];

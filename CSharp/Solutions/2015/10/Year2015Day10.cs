@@ -18,7 +18,7 @@ namespace AdventOfCode.Solutions._2015._10
             return input;
         }
 		
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
         {
             var input = GetInput(lines);
             for (var i = 0; i < 40; i++)
@@ -57,7 +57,7 @@ namespace AdventOfCode.Solutions._2015._10
             return sb.ToString();
         }
 
-        public string Part2(IEnumerable<string> lines)
+        public object Part2(IEnumerable<string> lines)
 		{
             var input = GetInput(lines);
             for (var i = 0; i < 50; i++)

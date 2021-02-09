@@ -19,7 +19,7 @@ namespace AdventOfCode.Solutions._2015._12
             return input;
         }
 
-        public string Part1(IEnumerable<string> lines)
+        public object Part1(IEnumerable<string> lines)
         {
             var input = GetInput(lines);
             var matches = Regex.Matches(input, @"-?\d+");
@@ -34,7 +34,7 @@ namespace AdventOfCode.Solutions._2015._12
             return sum.ToString();
         }
 
-        public string Part2(IEnumerable<string> lines)
+        public object Part2(IEnumerable<string> lines)
 		{
             var input = GetInput(lines);
             return ProcessArray(JArray.Parse(input)).ToString();

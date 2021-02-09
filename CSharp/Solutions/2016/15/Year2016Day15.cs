@@ -8,12 +8,12 @@ namespace AdventOfCode.Solutions._2016._15
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day15 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             return CalculateTime(input).ToString();
         }
         
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var enumerable = input.ToList();
             enumerable.Add("Disc #7 has 11 positions; at time=0, it is at position 0.");

@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2015._25
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day25 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var (row, column) = GetRowAndColumn(input);
 			var rowColumnMax = Math.Max(row, column) * 2;
@@ -39,7 +39,7 @@ namespace AdventOfCode.Solutions._2015._25
 			return code * 252533 % 33554393;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			return "Congratulations!";
 		}

@@ -10,7 +10,7 @@ namespace AdventOfCode.Solutions._2018._2
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day02 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var a = 0;
 			var b = 0;
@@ -38,7 +38,7 @@ namespace AdventOfCode.Solutions._2018._2
 			return (a * b).ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var arr = input.ToArray();
 			for (var i = 0; i < arr.Length; i++)

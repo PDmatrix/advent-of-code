@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2017._17
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day17 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var numberOfSteps = int.Parse(input.First());
 			var array = new int[2018];
@@ -30,7 +30,7 @@ namespace AdventOfCode.Solutions._2017._17
 		private static int GetNextPosition(int currentPosition, int value, int steps)
 			=> (currentPosition + steps) % value + 1;
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var numberOfSteps = int.Parse(input.First());
 			var currentPos = 0;

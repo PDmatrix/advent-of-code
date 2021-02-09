@@ -9,14 +9,14 @@ namespace AdventOfCode.Solutions._2015._7
 	{
 		private Dictionary<string, string[]> 
 			_instructions = new Dictionary<string, string[]>();
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			_instructions = input.Select(r => r.Split()).ToDictionary(r => r.Last());
 			var value = Process("a");
 			return value.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var enumerable = input as string[] ?? input.ToArray();
 			_instructions = enumerable.Select(r => r.Split()).ToDictionary(r => r.Last());

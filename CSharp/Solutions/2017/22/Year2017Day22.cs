@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2017._22
         private const string Directions = "URDLURDL";
         private const string PossibleStates = ".W#F.";
         
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var gridState = GetGridState(input);
 
@@ -43,7 +43,7 @@ namespace AdventOfCode.Solutions._2017._22
             return newInfections.ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var gridState = GetGridState(input);
 

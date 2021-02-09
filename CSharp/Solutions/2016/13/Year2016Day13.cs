@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2016._13
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day13 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             const int maxX = 100;
             const int maxY = 100;
@@ -31,7 +31,7 @@ namespace AdventOfCode.Solutions._2016._13
             return (length - 1).ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             const int maxX = 100;
             const int maxY = 100;

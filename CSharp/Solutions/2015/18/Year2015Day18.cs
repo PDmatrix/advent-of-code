@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2015._18
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day18 : ISolution
 	{
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
 		{
 			var state = GetState(lines);
 			for (var i = 0; i < 100; i++)
@@ -95,7 +95,7 @@ namespace AdventOfCode.Solutions._2015._18
 			state[99][99] = true;
 		}
 		
-		public string Part2(IEnumerable<string> lines)
+		public object Part2(IEnumerable<string> lines)
 		{
 			var state = GetState(lines);
 			Stuck(state);

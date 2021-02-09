@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2018._10
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day10 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			const string regex = @"position=<\s*(-?\d+),\s*(-?\d+)> velocity=<\s*(-?\d+),\s*(-?\d+)>";
 			var points = input.Select(x =>
@@ -66,7 +66,7 @@ namespace AdventOfCode.Solutions._2018._10
 			}
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			const string regex = @"position=<\s*(-?\d+),\s*(-?\d+)> velocity=<\s*(-?\d+),\s*(-?\d+)>";
 			var points = input.Select(x =>

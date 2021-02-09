@@ -9,13 +9,13 @@ namespace AdventOfCode.Solutions._2016._4
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day04 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var sectorIds = GetSectorIds(input);
             return sectorIds.Sum().ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var list = GetNameAndSectorIds(input);
             return list.First(r => Encipher(r.Item1.Trim(), r.Item2) == "northpole object storage").Item2.ToString();

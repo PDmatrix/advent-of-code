@@ -10,7 +10,7 @@ namespace AdventOfCode.Solutions._2018._7
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day07 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var state = FillState(input);
 
@@ -58,7 +58,7 @@ namespace AdventOfCode.Solutions._2018._7
 			return state;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var state = FillState(input);
 			const int numWorkers = 5;

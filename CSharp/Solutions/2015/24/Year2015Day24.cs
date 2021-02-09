@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2015._24
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day24 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var numbers = input.Select(int.Parse).ToArray();
 			var sum = numbers.Sum() / 3;
@@ -20,7 +20,7 @@ namespace AdventOfCode.Solutions._2015._24
 			return qe.QE.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			_bestValue = int.MaxValue;
 			var numbers = input.Select(int.Parse).ToArray();

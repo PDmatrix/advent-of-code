@@ -7,14 +7,14 @@ namespace AdventOfCode.Solutions._2015._17
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day17 : ISolution
 	{
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
 		{
 			var numbers = lines.Select(int.Parse).ToArray();
 			var res = SumUp(numbers, 150);
 			return res.Count.ToString();
 		}
 
-		public string Part2(IEnumerable<string> lines)
+		public object Part2(IEnumerable<string> lines)
 		{
 			var numbers = lines.Select(int.Parse).ToArray();
 			var res = SumUp(numbers, 150);

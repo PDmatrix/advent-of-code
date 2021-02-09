@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._13
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day13 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var grid = input.ToArray();
 			var carts = FillCarts(grid);
@@ -108,7 +108,7 @@ namespace AdventOfCode.Solutions._2018._13
 			cart.Y += y;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var grid = input.ToArray();
 			var carts = FillCarts(grid);

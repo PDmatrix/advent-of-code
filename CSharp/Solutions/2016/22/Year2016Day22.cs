@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2016._22
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day22 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             const string reg = 
                 @"/dev/grid/node-x(?<x>\d+)-y(?<y>\d+)\s+(\d+)T\s+(?<u>\d+)T\s+(?<a>\d+)T\s+(\d+)";
@@ -40,7 +40,7 @@ namespace AdventOfCode.Solutions._2016._22
             return res.ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             const string reg = 
                 @"/dev/grid/node-x(?<x>\d+)-y(?<y>\d+)\s+(\d+)T\s+(?<u>\d+)T\s+(?<a>\d+)T\s+(\d+)";

@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._20
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day20 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var paths = input.First()[1..^1];
 			var (x, y) = (5000, 5000);
@@ -59,7 +59,7 @@ namespace AdventOfCode.Solutions._2018._20
 			return distances.Values.Max().ToString();
 		}
 		
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var paths = input.First()[1..^1];
 			var (x, y) = (5000, 5000);

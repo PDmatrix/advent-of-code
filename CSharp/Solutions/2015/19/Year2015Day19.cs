@@ -26,7 +26,7 @@ namespace AdventOfCode.Solutions._2015._19
 				});
 		}
 		
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
 		{
 			var enumerable = lines as string[] ?? lines.ToArray();
 			var replacements = GetReplacements(enumerable);
@@ -65,7 +65,7 @@ namespace AdventOfCode.Solutions._2015._19
 			return molecules.Count;
 		}
 
-		public string Part2(IEnumerable<string> lines)
+		public object Part2(IEnumerable<string> lines)
 		{
 			
 			var molecule = lines.Last();

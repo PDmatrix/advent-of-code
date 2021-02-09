@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2016._7
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day07 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var counter = 0;
             foreach (var ip in input)
@@ -49,7 +49,7 @@ namespace AdventOfCode.Solutions._2016._7
             }
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var counter = 0;
             foreach (var ip in input)

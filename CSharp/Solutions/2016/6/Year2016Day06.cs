@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2016._6
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day06 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             char MostCommonCharacter(string r) => 
                 r.GroupBy(x => x).OrderByDescending(x => x.Count()).First().Key;
@@ -17,7 +17,7 @@ namespace AdventOfCode.Solutions._2016._6
             return string.Join("", errorCorrectedMessage);
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             char LeastCommonCharacter(string r) => 
                 r.GroupBy(x => x).OrderBy(x => x.Count()).First().Key;

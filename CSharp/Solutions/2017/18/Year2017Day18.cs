@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2017._18
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day18 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			long sent = -1;
 			RunUntilBlocked(Interpreter(input.ToArray(), 0, n => sent = n, () => null));
@@ -84,7 +84,7 @@ namespace AdventOfCode.Solutions._2017._18
 			return Execute;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var instructions = input.ToArray();
 			var sent0 = new Queue<long>();

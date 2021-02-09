@@ -8,14 +8,14 @@ namespace AdventOfCode.Solutions._2016._3
 	// ReSharper disable once UnusedMember.Global
 	public class Year2016Day03 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var triangleSides = GetTriangleSides(input);
 			var validTriangles = triangleSides.Count(IsTriangleValid);
 			return validTriangles.ToString();
 		}
 		
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var triangleSides = GetVerticalTriangleSides(input);
 			var validTriangles = triangleSides.Count(IsTriangleValid);

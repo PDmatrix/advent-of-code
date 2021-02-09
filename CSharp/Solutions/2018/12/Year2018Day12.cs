@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._12
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day12 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var inputList = input.ToList();
 			var rawInitialState = Regex.Match(inputList.First(), @": (.+)").Groups[1].Value;
@@ -49,7 +49,7 @@ namespace AdventOfCode.Solutions._2018._12
 			return sb.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var inputList = input.ToList();
 			var rawInitialState = Regex.Match(inputList.First(), @": (.+)").Groups[1].Value;

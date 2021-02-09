@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2018._18
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day18 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var grid = input.Select(line => line.ToCharArray()).ToArray();
 			
@@ -67,7 +67,7 @@ namespace AdventOfCode.Solutions._2018._18
 			return acres;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var grid = input.Select(line => line.ToCharArray()).ToArray();
 			var states = new Dictionary<string, int>();

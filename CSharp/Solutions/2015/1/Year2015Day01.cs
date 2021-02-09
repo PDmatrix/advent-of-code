@@ -8,13 +8,13 @@ namespace AdventOfCode.Solutions._2015._1
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day01 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
  			var directions = input.First();
 			return directions.Sum(r => r == '(' ? 1 : -1).ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var directions = input.First();
 			var floor = 0;

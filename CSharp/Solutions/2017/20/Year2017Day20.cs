@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2017._20
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day20 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var particles = ParseInput(input).ToList();
 			for (var i = 0; i < 1000; i++)
@@ -25,7 +25,7 @@ namespace AdventOfCode.Solutions._2017._20
 				.First(x => x.particle.DistanceFromCenter == minDistanceFromCenter).index.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var particles = ParseInput(input).ToList();
 			for (var i = 0; i < 1000; i++)

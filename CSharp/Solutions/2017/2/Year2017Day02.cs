@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2017._2
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day02 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var spreadSheet = GetSpreadSheet(input);
 			return spreadSheet.Select(r =>
@@ -18,7 +18,7 @@ namespace AdventOfCode.Solutions._2017._2
 			}).Sum().ToString();
 		}
 		
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var spreadSheet = GetSpreadSheet(input);
 			return spreadSheet.Select(GetEvenDivide).Sum().ToString();

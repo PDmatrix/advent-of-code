@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2017._3
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day03 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var value = int.Parse(input.First());
 			var (level, minValue) = GetLevelAndMinValue(value);
@@ -41,7 +41,7 @@ namespace AdventOfCode.Solutions._2017._3
 			return (level, min);
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var state = new Dictionary<(int, int), int>
 			{

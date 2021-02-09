@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._17
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day17 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var clay = new HashSet<(int x, int y)>();;
 			foreach (var line in input)
@@ -93,7 +93,7 @@ namespace AdventOfCode.Solutions._2018._17
 			return (runningWater.Count - 3).ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var clay = new HashSet<(int x, int y)>();;
 			foreach (var line in input)

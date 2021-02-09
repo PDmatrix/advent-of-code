@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2018._4
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day04 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var records = input.ToList();
 			records.Sort((a, b) => string.CompareOrdinal(a[..17], b[..17]));
@@ -22,7 +22,7 @@ namespace AdventOfCode.Solutions._2018._4
 			        sleepyMinutes.Aggregate((a, b) => a.Value > b.Value ? a : b).Key).ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var records = input.ToList();
 			records.Sort((a, b) => string.CompareOrdinal(a[..17], b[..17]));

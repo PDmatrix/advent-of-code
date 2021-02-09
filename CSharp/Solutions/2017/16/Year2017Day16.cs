@@ -13,7 +13,7 @@ namespace AdventOfCode.Solutions._2017._16
 	{
 		private char[] _state = null!;
 		
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			const string start = "abcdefghijklmnop";
 			_state = start.ToCharArray();
@@ -67,7 +67,7 @@ namespace AdventOfCode.Solutions._2017._16
 			}
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			const string start = "abcdefghijklmnop";
 			_state = start.ToCharArray();

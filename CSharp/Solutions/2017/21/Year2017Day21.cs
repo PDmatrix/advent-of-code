@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2017._21
     // ReSharper disable once UnusedMember.Global
     public class Year2017Day21 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var state = new[] {".#.", "..#", "###"};
             var rules = input.Select(x => x.Replace("/", string.Empty).Split(' ')).Select(x => (x[0], x[2]));
@@ -22,7 +22,7 @@ namespace AdventOfCode.Solutions._2017._21
             return state.Sum(x => x.Count(c => c != '.')).ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var state = new[] {".#.", "..#", "###"};
             var rules = input.Select(x => x.Replace("/", string.Empty).Split(' ')).Select(x => (x[0], x[2]));

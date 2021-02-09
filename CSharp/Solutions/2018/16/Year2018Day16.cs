@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._16
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day16 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var instructions = input.Where(x => !string.IsNullOrWhiteSpace(x)).ToList();
 			var actions = new List<Action<IList<int>, int, int, int>>
@@ -58,7 +58,7 @@ namespace AdventOfCode.Solutions._2018._16
 				.Select(int.Parse);
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var instructions = input.Where(x => !string.IsNullOrWhiteSpace(x)).ToList();
 			var actions = new Dictionary<Action<IList<int>, int, int, int>, Dictionary<int, int>>

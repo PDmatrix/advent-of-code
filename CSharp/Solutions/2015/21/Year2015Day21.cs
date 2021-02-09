@@ -7,14 +7,14 @@ namespace AdventOfCode.Solutions._2015._21
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day21 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var enemy = GetEnemy(input);
 			var winners = Game.ExecuteUntilWin(enemy);
 			return winners.Min(r => r.EquipmentCost).ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var enemy = GetEnemy(input);
 			var losers = Game.ExecuteUntilLose(enemy);

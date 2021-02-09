@@ -13,7 +13,7 @@ namespace AdventOfCode.Solutions._2016._8
         private const int ScreenHeight = 6;
         private const int ScreenWidth = 50;
         
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var screen = new bool[ScreenHeight, ScreenWidth];
             foreach (var instruction in input)
@@ -42,7 +42,7 @@ namespace AdventOfCode.Solutions._2016._8
             return result.ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var screen = new bool[ScreenHeight, ScreenWidth];
             foreach (var instruction in input)

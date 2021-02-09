@@ -17,7 +17,7 @@ namespace AdventOfCode.Solutions._2015._11
             return input;
         }
 
-        public string Part1(IEnumerable<string> lines)
+        public object Part1(IEnumerable<string> lines)
         {
             var input = GetInput(lines);
             while (!IsValid(input))
@@ -75,7 +75,7 @@ namespace AdventOfCode.Solutions._2015._11
             return fragment + lastChar;
         }
 
-        public string Part2(IEnumerable<string> lines)
+        public object Part2(IEnumerable<string> lines)
 		{
             var input = GetInput(lines);
             while (!IsValid(input))

@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._22
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day22 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var depth = int.Parse(Regex.Match(input.First(), @"depth: (\d+)").Groups[1].Value);
 			var target = Regex.Match(input.Last(), @"target: (\d+),(\d+)").Groups;
@@ -55,7 +55,7 @@ namespace AdventOfCode.Solutions._2018._22
 			return s.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var depth = int.Parse(Regex.Match(input.First(), @"depth: (\d+)").Groups[1].Value);
 			var target = Regex.Match(input.Last(), @"target: (\d+),(\d+)").Groups;

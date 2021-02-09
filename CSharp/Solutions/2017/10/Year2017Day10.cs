@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2017._10
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day10 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var list = Enumerable.Range(0, 256).ToArray();
 			var lengths = input.First().Split(',').Select(int.Parse);
@@ -23,7 +23,7 @@ namespace AdventOfCode.Solutions._2017._10
 			return (list[0] * list[1]).ToString();
 		}
 		
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var list = Enumerable.Range(0, 256).ToArray();
 			var lengths = input.First().Select(r => (int) r).Concat(new[] {17, 31, 73, 47, 23}).ToArray();

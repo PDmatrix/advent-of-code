@@ -16,7 +16,7 @@ namespace AdventOfCode.Solutions._2016._21
         private const string ReversePositionsRegex = @"reverse positions (?<x>\d+) through (?<y>\d+)";
         private const string MovePositionRegex = @"move position (?<x>\d+) to position (?<y>\d+)";
 
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var password = "abcdefgh";
             foreach (var operation in input)
@@ -69,7 +69,7 @@ namespace AdventOfCode.Solutions._2016._21
             return password;
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             input = input.Reverse();
             var scrambled = "fbgdceah";

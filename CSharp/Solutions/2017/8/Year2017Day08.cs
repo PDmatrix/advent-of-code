@@ -23,7 +23,7 @@ namespace AdventOfCode.Solutions._2017._8
 
 		private const string Pattern = @"(?<reg>\w+?) (?<op>inc|dec) (?<by>-?\d+?) if (?<condreg>\w+?) (?<condop>>|<|>=|<=|==|!=) (?<condval>-?\d+)";
 
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var registers = new Dictionary<string, int>();
 			foreach (var el in input)
@@ -54,7 +54,7 @@ namespace AdventOfCode.Solutions._2017._8
 			if(!registers.ContainsKey(key)) registers.Add(key, 0);
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var registers = new Dictionary<string, int>();
 			var maxValue = 0;

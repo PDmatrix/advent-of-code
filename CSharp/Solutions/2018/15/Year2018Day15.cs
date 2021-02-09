@@ -10,7 +10,7 @@ namespace AdventOfCode.Solutions._2018._15
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day15 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var arr = input.ToArray();
 			var grid = FillGrid(arr);
@@ -18,7 +18,7 @@ namespace AdventOfCode.Solutions._2018._15
 			return GetGameResult(grid).result.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var arr = input.ToArray();
 			var failed = true;

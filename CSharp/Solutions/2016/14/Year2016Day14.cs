@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2016._14
     public class Year2016Day14 : ISolution
     {
         private static Dictionary<string, string> _hashCodes = new Dictionary<string, string>();
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var keys = new List<int>();
             var salt = input.First();
@@ -32,7 +32,7 @@ namespace AdventOfCode.Solutions._2016._14
             return keys.Last().ToString();
         }
         
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             _hashCodes = new Dictionary<string, string>();
             var keys = new List<int>();

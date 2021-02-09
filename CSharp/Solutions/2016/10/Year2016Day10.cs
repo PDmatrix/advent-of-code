@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2016._10
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day10 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var bots = new Dictionary<int, Action<int>>();
             var givePattern = new Regex(@"bot (?<source>\d+) gives low to (?<low>(bot|output)) (?<lowval>\d+) and high to (?<high>(bot|output)) (?<highval>\d+)");
@@ -48,7 +48,7 @@ namespace AdventOfCode.Solutions._2016._10
             return result.ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var bots = new Dictionary<int, Action<int>>();
             var outputs = new int[32];

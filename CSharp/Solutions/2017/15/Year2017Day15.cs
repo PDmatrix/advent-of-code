@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2017._15
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day15 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var (lastA, lastB) = Parse(input);
 			var res = 0;
@@ -60,7 +60,7 @@ namespace AdventOfCode.Solutions._2017._15
 			return last * factor % del;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var (lastA, lastB) = Parse(input);
 			var queueA = new Queue<long>();

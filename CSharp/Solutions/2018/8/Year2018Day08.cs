@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2018._8
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day08 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var numbers = input.First().Split(' ').Select(int.Parse).ToList();
 			var acc = 2;
@@ -38,7 +38,7 @@ namespace AdventOfCode.Solutions._2018._8
 			return total.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var numbers = input.First().Split(' ').Select(int.Parse).ToList();
 			var acc = 2;

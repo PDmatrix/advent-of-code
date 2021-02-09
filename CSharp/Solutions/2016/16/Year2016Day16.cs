@@ -9,12 +9,12 @@ namespace AdventOfCode.Solutions._2016._16
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day16 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             return CalculateDragonChecksum(input.First(), 272);
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             return CalculateDragonChecksum(input.First(), 35651584);
         }

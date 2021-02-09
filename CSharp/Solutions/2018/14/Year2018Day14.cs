@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._14
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day14 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var recipes = new List<int> {3, 7};
 			var recipeTimes = int.Parse(input.First());
@@ -36,7 +36,7 @@ namespace AdventOfCode.Solutions._2018._14
 			return sb.ToString();
 		}
 		
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var recipes = new List<int> {3, 7};
 			var recipe = input.First();

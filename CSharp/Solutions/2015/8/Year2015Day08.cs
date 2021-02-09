@@ -6,7 +6,7 @@ namespace AdventOfCode.Solutions._2015._8
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day08 : ISolution
 	{
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
 		{
 			int numberOfCharsLiteral = 0, numberOfCharsMemory = 0;
 			foreach (var line in lines)
@@ -33,7 +33,7 @@ namespace AdventOfCode.Solutions._2015._8
 			return (numberOfCharsLiteral - numberOfCharsMemory).ToString();
 		}
 
-		public string Part2(IEnumerable<string> lines)
+		public object Part2(IEnumerable<string> lines)
 		{
 			int numberOfCharsLiteral = 0, numberOfNewCharsLiteral = 0;
 			foreach (var line in lines)

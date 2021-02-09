@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2015._16
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day16 : ISolution
 	{
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
 		{
 			var aunts = GetAunts(lines);
 			var etallonAunt = new Dictionary<string, int>
@@ -65,7 +65,7 @@ namespace AdventOfCode.Solutions._2015._16
 			return res;
 		}
 
-		public string Part2(IEnumerable<string> lines)
+		public object Part2(IEnumerable<string> lines)
 		{
 			var aunts = GetAunts(lines);
 			var etallonAunt = new Dictionary<string, int>

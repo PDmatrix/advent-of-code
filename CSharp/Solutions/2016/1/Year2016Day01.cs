@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2016._1
 	// ReSharper disable once UnusedMember.Global
 	public class Year2016Day01 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var instructions = input.First().Split(",").Select(r => r.Trim());
 			var location = new {X = 0, Y = 0};
@@ -31,7 +31,7 @@ namespace AdventOfCode.Solutions._2016._1
 			return (Math.Abs(location.X) + Math.Abs(location.Y)).ToString();
 		}
 		
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var instructions = input.First().Split(",").Select(r => r.Trim());
 			var location = new {X = 0, Y = 0};

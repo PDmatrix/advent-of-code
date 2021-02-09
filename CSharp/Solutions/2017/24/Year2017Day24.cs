@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2017._24
     // ReSharper disable once UnusedMember.Global
     public class Year2017Day24 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var parts = input.Select(x =>
             {
@@ -18,7 +18,7 @@ namespace AdventOfCode.Solutions._2017._24
             return result.ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var parts = input.Select(x =>
             {

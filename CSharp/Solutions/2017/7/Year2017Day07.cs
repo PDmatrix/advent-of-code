@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2017._7
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day07 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var towers = GetTowers(input).ToList();
 			BuildTowerTree(towers);
@@ -16,7 +16,7 @@ namespace AdventOfCode.Solutions._2017._7
 			return bottomTower.Name;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var towers = GetTowers(input).ToList();
 			BuildTowerTree(towers);

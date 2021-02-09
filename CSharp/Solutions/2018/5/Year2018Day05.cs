@@ -10,7 +10,7 @@ namespace AdventOfCode.Solutions._2018._5
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day05 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var polymers = new StringBuilder(input.First());
 
@@ -31,7 +31,7 @@ namespace AdventOfCode.Solutions._2018._5
 			return polymers.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var loverCase = Enumerable.Range('a', 'z' - 'a' + 1).Select(i => (char) i).ToArray();
 			var upperCase = Enumerable.Range('A', 'Z' - 'A' + 1).Select(i => (char) i).ToArray();

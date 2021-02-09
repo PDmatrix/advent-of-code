@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2018._11
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day11 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var serialNumber = int.Parse(input.First());
 			var grid = new int[301, 301];
@@ -53,7 +53,7 @@ namespace AdventOfCode.Solutions._2018._11
 			return hundredsDigit - 5;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var serialNumber = int.Parse(input.First());
 			var grid = new int[301, 301];

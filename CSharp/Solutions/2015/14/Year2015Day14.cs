@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2015._14
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day14 : ISolution
 	{
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
      	{
      		var deers = GetDeers(lines);
      		var enumerable = deers as Deer[] ?? deers.ToArray();
@@ -21,7 +21,7 @@ namespace AdventOfCode.Solutions._2015._14
      		return enumerable.Select(r => r.TravelledDistance).Max().ToString();
      	}
      
-     	public string Part2(IEnumerable<string> lines)
+     	public object Part2(IEnumerable<string> lines)
      	{
      		var deers = GetDeers(lines);
      		var enumerable = deers as Deer[] ?? deers.ToArray();

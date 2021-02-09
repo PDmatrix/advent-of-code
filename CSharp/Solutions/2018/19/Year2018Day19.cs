@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._19
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day19 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var enumerable = input as string[] ?? input.ToArray();
 			var idx = int.Parse(enumerable.First(x => x.StartsWith('#'))[3..]);
@@ -67,7 +67,7 @@ namespace AdventOfCode.Solutions._2018._19
 			return result + n + 1; 
 		} 
 		
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var enumerable = input as string[] ?? input.ToArray();
 			var idx = int.Parse(enumerable.First(x => x.StartsWith('#'))[3..]);

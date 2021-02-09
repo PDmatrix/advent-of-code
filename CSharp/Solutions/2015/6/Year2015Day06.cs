@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2015._6
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day06 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var instructions = GetInstructions(input);
 			var grid = new bool[1000, 1000];
@@ -48,7 +48,7 @@ namespace AdventOfCode.Solutions._2015._6
 			return result.ToString();
 		}
 		
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var instructions = GetInstructions(input);
 			var grid = new int[1000, 1000];

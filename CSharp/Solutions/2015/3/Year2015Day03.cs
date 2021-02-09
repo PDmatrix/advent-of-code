@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2015._3
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day03 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var directions = input.First();
 			var location = new {X = 0, Y = 0};
@@ -27,7 +27,7 @@ namespace AdventOfCode.Solutions._2015._3
 			return points.Count.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var directions = input.First();
 			var santa = new {X = 0, Y = 0};

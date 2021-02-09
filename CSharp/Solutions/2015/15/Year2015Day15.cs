@@ -38,7 +38,7 @@ namespace AdventOfCode.Solutions._2015._15
 			}
 		}
 		
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
 		{
 			var ingredients = GetIngredients(lines);
 			var res = new List<long>();
@@ -92,7 +92,7 @@ namespace AdventOfCode.Solutions._2015._15
 			return res <= 0 ? 0 : res;
 		}
 
-		public string Part2(IEnumerable<string> lines)
+		public object Part2(IEnumerable<string> lines)
 		{
 			var ingredients = GetIngredients(lines);
 			var res = new List<long>();

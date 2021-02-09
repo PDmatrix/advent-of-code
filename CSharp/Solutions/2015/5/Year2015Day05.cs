@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2015._5
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day05 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			bool HasThreeVowels(string str) => 
 				Regex.Matches(str, @"[aeiou]").Count >= 3;
@@ -28,7 +28,7 @@ namespace AdventOfCode.Solutions._2015._5
 			return niceStrings.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			bool HasPair(string str) => 
 				Regex.IsMatch(str, @"(\w{2}).*\1");

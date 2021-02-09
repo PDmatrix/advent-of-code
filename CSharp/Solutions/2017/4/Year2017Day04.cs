@@ -7,7 +7,7 @@ namespace AdventOfCode.Solutions._2017._4
 	// ReSharper disable once UnusedMember.Global
 	public class Year2017Day04 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			return input.Select(UniqueWords).Sum().ToString();
 		}
@@ -18,7 +18,7 @@ namespace AdventOfCode.Solutions._2017._4
 			return arrayOfWords.Length == arrayOfWords.Distinct().Count() ? 1 : 0;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			return input.Select(UniqueNonRearrangeWords).Sum().ToString();
 		}

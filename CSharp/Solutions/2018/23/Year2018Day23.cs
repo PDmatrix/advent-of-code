@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2018._23
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day23 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var list = new List<(int x, int y, int z, int r)>();
 			const string? regex = @"pos=<(?<x>-?\d+),(?<y>-?\d+),(?<z>-?\d+)>, r=(?<r>\d+)";
@@ -27,7 +27,7 @@ namespace AdventOfCode.Solutions._2018._23
 				.Select(dst => dst <= r ? 1 : 0).Sum().ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var list = new List<(int x, int y, int z, int r)>();
 			const string? regex = @"pos=<(?<x>-?\d+),(?<y>-?\d+),(?<z>-?\d+)>, r=(?<r>\d+)";

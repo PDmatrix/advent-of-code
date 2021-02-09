@@ -19,7 +19,7 @@ namespace AdventOfCode.Solutions._2017._11
 				{"sw", (-1, 0, 1)},
 				{"nw", (-1, 1, 0)},
 			};
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var paths = input.First().Split(',');
 			var point = (x: 0, y: 0, z: 0);
@@ -34,7 +34,7 @@ namespace AdventOfCode.Solutions._2017._11
 			return GetDistance(point).ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var paths = input.First().Split(',');
 			var point = (x: 0, y: 0, z: 0);

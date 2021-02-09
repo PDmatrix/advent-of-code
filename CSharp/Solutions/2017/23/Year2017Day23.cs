@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2017._23
     // ReSharper disable once UnusedMember.Global
     public class Year2017Day23 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var regex = new Regex(@"(?<op>set|mul|sub|jnz) (?<f>.+?) (?<s>.+)", RegexOptions.Compiled);
             
@@ -65,7 +65,7 @@ namespace AdventOfCode.Solutions._2017._23
             return mulCount.ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var result = 0;
             // register b = 79

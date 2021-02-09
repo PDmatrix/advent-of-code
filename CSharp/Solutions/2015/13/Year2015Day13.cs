@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2015._13
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day13 : ISolution
 	{
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
 		{
 			var enumerable = lines as string[] ?? lines.ToArray();
 			var guests = GetGuests(enumerable).ToArray();
@@ -17,7 +17,7 @@ namespace AdventOfCode.Solutions._2015._13
 			return permutations.Select(r => Compute(r, units)).Max().ToString();
 		}
 
-		public string Part2(IEnumerable<string> lines)
+		public object Part2(IEnumerable<string> lines)
 		{
 			var enumerable = lines as string[] ?? lines.ToArray();
 			var guests = GetGuests(enumerable).ToList();

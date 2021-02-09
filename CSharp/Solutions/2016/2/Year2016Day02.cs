@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2016._2
 	// ReSharper disable once UnusedMember.Global
 	public class Year2016Day02 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var keypad = new[] {"123", "456", "789"};
 			var location = new {Row = 2, Col = 2};
@@ -32,7 +32,7 @@ namespace AdventOfCode.Solutions._2016._2
 			return answer;
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var keypad = new[] {"  1  ", " 234 ", "56789", " ABC ", "  D  "};
 			var location = new {Row = 3, Col = 1};

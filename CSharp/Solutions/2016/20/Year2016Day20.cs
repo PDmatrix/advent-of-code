@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2016._20
     // ReSharper disable once UnusedMember.Global
     public class Year2016Day20 : ISolution
     {
-        public string Part1(IEnumerable<string> input)
+        public object Part1(IEnumerable<string> input)
         {
             var blacklist = input.Select(r =>
                 {
@@ -40,7 +40,7 @@ namespace AdventOfCode.Solutions._2016._20
             return current.ToString();
         }
 
-        public string Part2(IEnumerable<string> input)
+        public object Part2(IEnumerable<string> input)
         {
             var blacklist = input.Select(r =>
                 {

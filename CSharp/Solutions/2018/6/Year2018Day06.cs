@@ -10,7 +10,7 @@ namespace AdventOfCode.Solutions._2018._6
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day06 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var coords = input.Select(x =>
 			{
@@ -43,7 +43,7 @@ namespace AdventOfCode.Solutions._2018._6
 			return cnt.Where(x => x < 1000000).Max().ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var coords = input.Select(x =>
 			{

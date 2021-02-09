@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions._2018._9
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day09 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var groups = Regex.Match(input.First(), @"(\d+) players; last marble is worth (\d+) points").Groups;
 			var players = int.Parse(groups[1].Value);
@@ -53,7 +53,7 @@ namespace AdventOfCode.Solutions._2018._9
 			return playerList.Values.Max();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var groups = Regex.Match(input.First(), @"(\d+) players; last marble is worth (\d+) points").Groups;
 			var players = int.Parse(groups[1].Value);

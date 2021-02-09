@@ -9,7 +9,7 @@ namespace AdventOfCode.Solutions._2015._4
 	// ReSharper disable once UnusedMember.Global
 	public class Year2015Day04 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var key = input.First();
 			var number = 1;
@@ -23,7 +23,7 @@ namespace AdventOfCode.Solutions._2015._4
 			return number.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var key = input.First();
 			var number = 1;

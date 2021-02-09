@@ -19,7 +19,7 @@ namespace AdventOfCode.Solutions._2017._19
 			Up
 		}
 		
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var grid = input.Select(x => x.Select(w => w).ToArray()).ToArray();
 
@@ -75,7 +75,7 @@ namespace AdventOfCode.Solutions._2017._19
 			throw new Exception();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var grid = input.Select(x => x.Select(w => w).ToArray()).ToArray();
 

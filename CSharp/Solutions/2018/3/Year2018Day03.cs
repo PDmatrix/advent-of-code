@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions._2018._3
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day03 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var grid = new Dictionary<(int x, int y), int>();
 			var claims = input as string[] ?? input.ToArray();
@@ -35,7 +35,7 @@ namespace AdventOfCode.Solutions._2018._3
 			return grid.Values.Count(x => x > 1).ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var grid = new Dictionary<(int x, int y), int>();
 			var claims = input as string[] ?? input.ToArray();

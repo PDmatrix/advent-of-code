@@ -9,13 +9,13 @@ namespace AdventOfCode.Solutions._2018._24
 	// ReSharper disable once UnusedMember.Global
 	public class Year2018Day24 : ISolution
 	{
-		public string Part1(IEnumerable<string> input)
+		public object Part1(IEnumerable<string> input)
 		{
 			var army = Parse(input);
 			return Fight(army, 0).units.ToString();
 		}
 
-		public string Part2(IEnumerable<string> input)
+		public object Part2(IEnumerable<string> input)
 		{
 			var l = 0;
 			var h = int.MaxValue / 2;

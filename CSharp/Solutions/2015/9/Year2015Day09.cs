@@ -42,7 +42,7 @@ namespace AdventOfCode.Solutions._2015._9
 			return res;
 		}
 		
-		public string Part1(IEnumerable<string> lines)
+		public object Part1(IEnumerable<string> lines)
 		{
 			var enumerable = lines as string[] ?? lines.ToArray();
 			var cities = GetCities(enumerable).ToArray();
@@ -104,7 +104,7 @@ namespace AdventOfCode.Solutions._2015._9
 			return res;
 		}
 
-		public string Part2(IEnumerable<string> lines)
+		public object Part2(IEnumerable<string> lines)
 		{
 			var enumerable = lines as string[] ?? lines.ToArray();
 			var cities = GetCities(enumerable).ToArray();
