@@ -9,7 +9,7 @@ You can click on check mark to find solution for that day
 
 | Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  :tada:2017:tada:  |  :tada:2018:tada:  |  2019  |  2020  |
 |-----|-----------------------|--------|--------|--------|--------|--------|
-| 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | [:heavy_check_mark:][201701S]    | [:heavy_check_mark:][201801S]    |  :x:  |  :x:  |
+| 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | [:heavy_check_mark:][201701S]    | [:heavy_check_mark:][201801S]    |  [:heavy_check_mark:][201901S]  |  :x:  |
 | 2   | [:heavy_check_mark:][201502S] [Blog Post][201502]  | [:heavy_check_mark:][201602S]    | [:heavy_check_mark:][201702S]    | [:heavy_check_mark:][201802S]     |  :x:  |  :x:  |
 | 3   | [:heavy_check_mark:][201503S] [Blog Post][201503]  | [:heavy_check_mark:][201603S]    | [:heavy_check_mark:][201703S]    | [:heavy_check_mark:][201803S]     |  :x:  |  :x:  |
 | 4   | [:heavy_check_mark:][201504S] [Blog Post][201504]  | [:heavy_check_mark:][201604S]    | [:heavy_check_mark:][201704S]    | [:heavy_check_mark:][201804S]    |  :x:  |  :x:  |
