@@ -3,68 +3,68 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AdventOfCode.Common;
+using JetBrains.Annotations;
 
-namespace AdventOfCode.Solutions._2015._10
+namespace AdventOfCode.Solutions._2015._10;
+
+[UsedImplicitly]
+public class Year2015Day10 : ISolution
 {
-	// ReSharper disable once UnusedMember.Global
-	public class Year2015Day10 : ISolution
-	{
-        private static string GetInput(IEnumerable<string> lines)
-        {
-            var input = lines.FirstOrDefault();
-            if (input == null)
-                throw new Exception("Invalid input");
+    private static string GetInput(IEnumerable<string> lines)
+    {
+        var input = lines.FirstOrDefault();
+        if (input == null)
+            throw new Exception("Invalid input");
 
-            return input;
-        }
+        return input;
+    }
 		
-		public object Part1(IEnumerable<string> lines)
+    public object Part1(IEnumerable<string> lines)
+    {
+        var input = GetInput(lines);
+        for (var i = 0; i < 40; i++)
         {
-            var input = GetInput(lines);
-            for (var i = 0; i < 40; i++)
-            {
-                input = ProcessInput(input);
-            }
-            return input.Length.ToString();
+            input = ProcessInput(input);
         }
+        return input.Length.ToString();
+    }
 
-        private static string ProcessInput(string input)
+    private static string ProcessInput(string input)
+    {
+        var counter = -1;
+        var processing = '\0';
+        var sb = new StringBuilder();
+        foreach (var num in input)
         {
-            var counter = -1;
-            var processing = '\0';
-            var sb = new StringBuilder();
-            foreach (var num in input)
+            if (counter == -1)
             {
-                if (counter == -1)
-                {
-                    processing = num;
-                    counter = 1;
-                    continue;
-                }
-
-                if (num == processing)
-                    counter++;
-                else
-                {
-                    sb.Append(counter.ToString());
-                    sb.Append(processing);
-                    counter = 1;
-                    processing = num;
-                }
+                processing = num;
+                counter = 1;
+                continue;
             }
-            sb.Append(counter.ToString());
-            sb.Append(processing);
-            return sb.ToString();
-        }
 
-        public object Part2(IEnumerable<string> lines)
-		{
-            var input = GetInput(lines);
-            for (var i = 0; i < 50; i++)
+            if (num == processing)
+                counter++;
+            else
             {
-                input = ProcessInput(input);
+                sb.Append(counter.ToString());
+                sb.Append(processing);
+                counter = 1;
+                processing = num;
             }
-            return input.Length.ToString();
         }
-	}
+        sb.Append(counter.ToString());
+        sb.Append(processing);
+        return sb.ToString();
+    }
+
+    public object Part2(IEnumerable<string> lines)
+    {
+        var input = GetInput(lines);
+        for (var i = 0; i < 50; i++)
+        {
+            input = ProcessInput(input);
+        }
+        return input.Length.ToString();
+    }
 }

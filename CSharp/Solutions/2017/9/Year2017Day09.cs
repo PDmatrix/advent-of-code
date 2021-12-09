@@ -2,88 +2,88 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AdventOfCode.Common;
+using JetBrains.Annotations;
 
-namespace AdventOfCode.Solutions._2017._9
+namespace AdventOfCode.Solutions._2017._9;
+
+[UsedImplicitly]
+public class Year2017Day09 : ISolution
 {
-	// ReSharper disable once UnusedMember.Global
-	public class Year2017Day09 : ISolution
+	public object Part1(IEnumerable<string> input)
 	{
-		public object Part1(IEnumerable<string> input)
-		{
-			var str = input.First();
-			str = StripIgnored(str);
-			RemoveGarbage(ref str);
-			str = str.Replace(",", "");
-			return CountGroups(str).ToString();
-		}
+		var str = input.First();
+		str = StripIgnored(str);
+		RemoveGarbage(ref str);
+		str = str.Replace(",", "");
+		return CountGroups(str).ToString();
+	}
 		
-		public object Part2(IEnumerable<string> input)
-		{
-			var str = input.First();
-			str = StripIgnored(str);
-			return RemoveGarbageWithCount(ref str).ToString();
-		}
+	public object Part2(IEnumerable<string> input)
+	{
+		var str = input.First();
+		str = StripIgnored(str);
+		return RemoveGarbageWithCount(ref str).ToString();
+	}
 
-		private static int CountGroups(string str)
+	private static int CountGroups(string str)
+	{
+		var stack = new Stack<char>();
+		var result = 0;
+		foreach (var c in str)
 		{
-			var stack = new Stack<char>();
-			var result = 0;
-			foreach (var c in str)
+			if (c == '{')
 			{
-				if (c == '{')
-				{
-					stack.Push(c);
-					continue;
-				}
-
-				result += stack.Count;
-				stack.Pop();
+				stack.Push(c);
+				continue;
 			}
 
-			return result;
+			result += stack.Count;
+			stack.Pop();
 		}
 
-		private static void RemoveGarbage(ref string str)
+		return result;
+	}
+
+	private static void RemoveGarbage(ref string str)
+	{
+		while (true)
 		{
-			while (true)
-			{
-				var startIndex = str.IndexOf('<');
-				if (startIndex == -1) return;
-				var endIndex = str.IndexOf('>');
-				str = str.Remove(startIndex, endIndex - startIndex + 1);
-			}
+			var startIndex = str.IndexOf('<');
+			if (startIndex == -1) return;
+			var endIndex = str.IndexOf('>');
+			str = str.Remove(startIndex, endIndex - startIndex + 1);
 		}
+	}
 		
-		private static int RemoveGarbageWithCount(ref string str)
+	private static int RemoveGarbageWithCount(ref string str)
+	{
+		var result = 0;
+		while (true)
 		{
-			var result = 0;
-			while (true)
-			{
-				var startIndex = str.IndexOf('<');
-				if (startIndex == -1) return result;
-				var endIndex = str.IndexOf('>');
-				str = str.Remove(startIndex, endIndex - startIndex + 1);
-				result += endIndex - startIndex - 1;
-			}
+			var startIndex = str.IndexOf('<');
+			if (startIndex == -1) return result;
+			var endIndex = str.IndexOf('>');
+			str = str.Remove(startIndex, endIndex - startIndex + 1);
+			result += endIndex - startIndex - 1;
 		}
+	}
 
-		private static string StripIgnored(string str)
+	private static string StripIgnored(string str)
+	{
+		var sb = new StringBuilder(str);
+		var i = 0;
+		while (i < sb.Length)
 		{
-			var sb = new StringBuilder(str);
-			var i = 0;
-			while (i < sb.Length)
+			if (sb[i] != '!')
 			{
-				if (sb[i] != '!')
-				{
-					i++;
-					continue;
-				}
-
-				sb[i] = '@';
-				sb[i + 1] = '@';
-				i += 2;
+				i++;
+				continue;
 			}
-			return sb.ToString().Replace("@", "");
+
+			sb[i] = '@';
+			sb[i + 1] = '@';
+			i += 2;
 		}
+		return sb.ToString().Replace("@", "");
 	}
 }

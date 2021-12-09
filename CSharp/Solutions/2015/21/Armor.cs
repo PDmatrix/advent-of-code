@@ -1,7 +1,6 @@
-namespace AdventOfCode.Solutions._2015._21
+namespace AdventOfCode.Solutions._2015._21;
+
+public class Armor : Item
 {
-	public class Armor : Item
-	{
-		public int Defense { get; set; }
-	}
+	public int Defense { get; set; }
 }
