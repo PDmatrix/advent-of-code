@@ -8,7 +8,7 @@ namespace CliUtils
 	public static class Custom
 	{
 		public static readonly Lazy<HttpClient> HttpClient 
-			= new Lazy<HttpClient>(HttpClientFactory, LazyThreadSafetyMode.ExecutionAndPublication);
+			= new(HttpClientFactory, LazyThreadSafetyMode.ExecutionAndPublication);
 
 		private static HttpClient HttpClientFactory()
 		{

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AngleSharp.Dom;
-using AngleSharp.Parser.Html;
+using AngleSharp.Html.Parser;
 
 namespace CliUtils.Executors
 {
@@ -26,7 +26,7 @@ namespace CliUtils.Executors
 		private static string HandleNode(IElement node)
 		{
 			var res = FuncMap[node.TagName](node.OuterHtml);
-			var middlewareTags = new [] {"SPAN", "A", "EM", "CODE", "P", "PRE"};
+			var middlewareTags = new [] {"SPAN", "A", "CODE", "EM", "P", "PRE"};
 			res = middlewareTags.Aggregate(res, (current, tag) => FuncMap[tag](current));
 			return res;
 		}
@@ -40,7 +40,7 @@ namespace CliUtils.Executors
 		public static async Task<string> HtmlToMdAsync(string html)
 		{
 			var parser = new HtmlParser();
-			var document = await parser.ParseAsync(html);
+			var document = await parser.ParseDocumentAsync(html);
 			var children = 
 				document.QuerySelectorAll("article").SelectMany(r => r.Children).ToArray();
 			

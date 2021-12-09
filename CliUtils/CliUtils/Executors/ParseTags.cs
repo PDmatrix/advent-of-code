@@ -15,15 +15,17 @@ namespace CliUtils.Executors
 		{
 			if (!Regex.IsMatch(html, @"(<code.*?>)|(<\/code>)"))
 				return html;
-			
-			
+
+
 			var replaced = Regex.Replace(html, @"(<code.*?>)|(<\/code>)", "```");
 			return string.Join(string.Empty, replaced.Split("```").Select((r, idx) =>
 			{
 				if (idx % 2 == 0)
 					return r;
 				
-				return r.Contains("\n") ? $"```\n{r}```" : $"```{r}```";
+				r = Regex.Replace(r, "(<em(>|\\sclass=\"star\">))|(<\\/em>)", string.Empty);
+				
+				return r.Contains('\n') ? $"```\n{r}```" : $"```{r}```";
 			}));
 		}
 		
@@ -40,10 +42,12 @@ namespace CliUtils.Executors
 			if (!Regex.IsMatch(html, @"(<a(.*))|(</a>)"))
 				return html;
 			
-			var hrefMatch = Regex.Match(html, "href=\"(?<s>.+)\"");
+			var hrefMatch = Regex.Match(html, "href=\"(?<s>[^\"]+)\"");
 			
-			return Regex.Replace(html, "(<a(.*?)>)", "[")
+			var a = Regex.Replace(html, "(<a(.*?)>)", "[")
 				.Replace("</a>", $"]({hrefMatch.Groups["s"].Value})");
+
+			return a;
 		}
 		
 		public static string Span(string html)
