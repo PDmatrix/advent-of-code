@@ -7,6 +7,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    </PropertyGroup>
+
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.3.0" />
       <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
