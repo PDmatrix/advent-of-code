@@ -18,7 +18,7 @@ You can click on check mark to find solution for that day
 | 7   | [:heavy_check_mark:][201507S] [Blog Post][201507]  | [:heavy_check_mark:][201607S]    | [:heavy_check_mark:][201707S]    | [:heavy_check_mark:][201807S]    |  [:heavy_check_mark:][201907S]  |  :x:  |
 | 8   | [:heavy_check_mark:][201508S] [Blog Post][201508]  | [:heavy_check_mark:][201608S]    | [:heavy_check_mark:][201708S]    | [:heavy_check_mark:][201808S]    |  [:heavy_check_mark:][201908S]  |  :x:  |
 | 9   | [:heavy_check_mark:][201509S] [Blog Post][201509]  | [:heavy_check_mark:][201609S]    | [:heavy_check_mark:][201709S]    | [:heavy_check_mark:][201809S]    |  [:heavy_check_mark:][201909S]  |  :x:  |
-| 10  | [:heavy_check_mark:][201510S] [Blog Post][201510]  | [:heavy_check_mark:][201610S]    | [:heavy_check_mark:][201710S]    | [:heavy_check_mark:][201810S]    |  :x:  |  :x:  |
+| 10  | [:heavy_check_mark:][201510S] [Blog Post][201510]  | [:heavy_check_mark:][201610S]    | [:heavy_check_mark:][201710S]    | [:heavy_check_mark:][201810S]    |  [:heavy_check_mark:][201910S]  |  :x:  |
 | 11  | [:heavy_check_mark:][201511S] [Blog Post][201511]  | [:heavy_exclamation_mark:][201611S]    | [:heavy_check_mark:][201711S]     | [:heavy_check_mark:][201811S]    |  :x:  |  :x:  |
 | 12  | [:heavy_check_mark:][201512S] [Blog Post][201512]  | [:heavy_check_mark:][201612S]    | [:heavy_check_mark:][201712S]    | [:heavy_check_mark:][201812S]    |  :x:  |  :x:  |
 | 13  | [:heavy_check_mark:][201513S] [Blog Post][201513]  | [:heavy_check_mark:][201613S]    | [:heavy_check_mark:][201713S]    | [:heavy_check_mark:][201813S]    |  :x:  |  :x:  |
