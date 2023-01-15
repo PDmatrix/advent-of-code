@@ -7,7 +7,7 @@ You can click on check mark to find solution for that day
 
 ---
 
-| Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  :tada:2017:tada:  |  :tada:2018:tada:  |  2019  |  2020  |
+| Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  :tada:2017:tada:  |  :tada:2018:tada:  |  :tada:2019:tada:  |  2020  |
 |-----|-----------------------|--------|--------|--------|--------|--------|
 | 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | [:heavy_check_mark:][201701S]    | [:heavy_check_mark:][201801S]    |  [:heavy_check_mark:][201901S]  |  :x:  |
 | 2   | [:heavy_check_mark:][201502S] [Blog Post][201502]  | [:heavy_check_mark:][201602S]    | [:heavy_check_mark:][201702S]    | [:heavy_check_mark:][201802S]    |  [:heavy_check_mark:][201902S]  |  :x:  |
@@ -33,7 +33,7 @@ You can click on check mark to find solution for that day
 | 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | [:heavy_check_mark:][201722S]    | [:heavy_check_mark:][201822S]    |  [:heavy_check_mark:][201922S]  |  :x:  |
 | 23  | [:heavy_check_mark:][201523S]    | [:heavy_check_mark:][201623S]    | [:heavy_check_mark:][201723S]    | [:heavy_check_mark:][201823S]    |  [:heavy_check_mark:][201923S]  |  :x:  |
 | 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | [:heavy_check_mark:][201724S]    | [:heavy_check_mark:][201824S]    |  [:heavy_check_mark:][201924S]  |  :x:  |
-| 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | [:heavy_check_mark:][201725S]    | [:heavy_check_mark:][201825S]    |  :x:  |  :x:  |
+| 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | [:heavy_check_mark:][201725S]    | [:heavy_check_mark:][201825S]    |  [:heavy_check_mark:][201925S]  |  :x:  |
 
 [201501]: https://dmatrix.dev/advent-of-code-year-2015-day-1/
 [201502]: https://dmatrix.dev/advent-of-code-year-2015-day-2/
