@@ -11,7 +11,6 @@ public class Year2020Day01 : ISolution
 {
 	public object Part1(IEnumerable<string> input)
 	{
-		var set = new HashSet<int>();
 		var list = input.Select(int.Parse).ToList();
 
 		return TwoSum(2020, list);
