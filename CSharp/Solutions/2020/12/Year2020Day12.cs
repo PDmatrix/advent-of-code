@@ -13,16 +13,6 @@ public class Year2020Day12 : ISolution
 {
 	public object Part1(IEnumerable<string> input)
 	{
-		/*
-		input = new[]
-		{
-			"F10",
-			"N3",
-			"F7",
-			"R90",
-			"F11",
-		};
-		*/
 		var current = new Point(0, 0);
 		var currentAngle = 0;
 		var movementInstructions = new HashSet<char>
