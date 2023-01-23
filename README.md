@@ -22,7 +22,7 @@ You can click on check mark to find solution for that day
 | 11  | [:heavy_check_mark:][201511S] [Blog Post][201511]  | [:heavy_exclamation_mark:][201611S]    | [:heavy_check_mark:][201711S]     | [:heavy_check_mark:][201811S]    |  [:heavy_check_mark:][201911S]  |  [:heavy_check_mark:][202011S]  |
 | 12  | [:heavy_check_mark:][201512S] [Blog Post][201512]  | [:heavy_check_mark:][201612S]    | [:heavy_check_mark:][201712S]    | [:heavy_check_mark:][201812S]    |  [:heavy_check_mark:][201912S]  |  [:heavy_check_mark:][202012S]  |
 | 13  | [:heavy_check_mark:][201513S] [Blog Post][201513]  | [:heavy_check_mark:][201613S]    | [:heavy_check_mark:][201713S]    | [:heavy_check_mark:][201813S]    |  [:heavy_check_mark:][201913S]  |  [:heavy_check_mark:][202013S]  |
-| 14  | [:heavy_check_mark:][201514S]    | [:heavy_check_mark:][201614S]    | [:heavy_check_mark:][201714S]    | [:heavy_check_mark:][201814S]    |  [:heavy_check_mark:][201914S]  |  :x:  |
+| 14  | [:heavy_check_mark:][201514S]    | [:heavy_check_mark:][201614S]    | [:heavy_check_mark:][201714S]    | [:heavy_check_mark:][201814S]    |  [:heavy_check_mark:][201914S]  |  [:heavy_check_mark:][202014S]  |
 | 15  | [:heavy_check_mark:][201515S]    | [:heavy_check_mark:][201615S]    | [:heavy_check_mark:][201715S]    | [:heavy_check_mark:][201815S]    |  [:heavy_check_mark:][201915S]  |  :x:  |
 | 16  | [:heavy_check_mark:][201516S]    | [:heavy_check_mark:][201616S]    | [:heavy_check_mark:][201716S]    | [:heavy_check_mark:][201816S]    |  [:heavy_check_mark:][201916S]  |  :x:  |
 | 17  | [:heavy_check_mark:][201517S]    | [:heavy_check_mark:][201617S]    | [:heavy_check_mark:][201717S]    | [:heavy_check_mark:][201817S]    |  [:heavy_check_mark:][201917S]  |  :x:  |
