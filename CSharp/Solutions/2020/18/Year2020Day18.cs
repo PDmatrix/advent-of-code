@@ -12,12 +12,6 @@ public class Year2020Day18 : ISolution
 {
 	public object Part1(IEnumerable<string> input)
 	{
-		/*
-		input = new[]
-		{
-			"1 + (2 * 3) + (4 * (5 + 6))",
-		};
-		*/
 		var regex = new Regex(@"\(([^()]+)\)");
 
 		long answer = 0;
