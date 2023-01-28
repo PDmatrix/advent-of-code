@@ -28,7 +28,7 @@ You can click on check mark to find solution for that day
 | 17  | [:heavy_check_mark:][201517S]    | [:heavy_check_mark:][201617S]    | [:heavy_check_mark:][201717S]    | [:heavy_check_mark:][201817S]    |  [:heavy_check_mark:][201917S]  |  [:heavy_check_mark:][202017S]  |
 | 18  | [:heavy_check_mark:][201518S]    | [:heavy_check_mark:][201618S]    | [:heavy_check_mark:][201718S]    | [:heavy_check_mark:][201818S]    |  [:heavy_check_mark:][201918S]  |  [:heavy_check_mark:][202018S]  |
 | 19  | [:heavy_check_mark:][201519S]    | [:heavy_check_mark:][201619S]    | [:heavy_check_mark:][201719S]    | [:heavy_check_mark:][201819S]    |  [:heavy_check_mark:][201919S]  |  [:heavy_check_mark:][202019S]  |
-| 20  | [:heavy_check_mark:][201520S]    | [:heavy_check_mark:][201620S]    | [:heavy_check_mark:][201720S]    | [:heavy_check_mark:][201820S]    |  [:heavy_check_mark:][201920S]  |  :x:  |
+| 20  | [:heavy_check_mark:][201520S]    | [:heavy_check_mark:][201620S]    | [:heavy_check_mark:][201720S]    | [:heavy_check_mark:][201820S]    |  [:heavy_check_mark:][201920S]  |  [:heavy_check_mark:][202020S]  |
 | 21  | [:heavy_check_mark:][201521S]    | [:heavy_check_mark:][201621S]    | [:heavy_check_mark:][201721S]    | [:heavy_check_mark:][201821S]    |  [:heavy_check_mark:][201921S]  |  :x:  |
 | 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | [:heavy_check_mark:][201722S]    | [:heavy_check_mark:][201822S]    |  [:heavy_check_mark:][201922S]  |  :x:  |
 | 23  | [:heavy_check_mark:][201523S]    | [:heavy_check_mark:][201623S]    | [:heavy_check_mark:][201723S]    | [:heavy_check_mark:][201823S]    |  [:heavy_check_mark:][201923S]  |  :x:  |
