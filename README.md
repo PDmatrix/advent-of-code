@@ -7,33 +7,33 @@ You can click on check mark to find solution for that day
 
 ---
 
-| Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  :tada:2017:tada:  |  :tada:2018:tada:  |  :tada:2019:tada:  | :tada:2020:tada:  |
-|-----|-----------------------|--------|--------|--------|--------|--------|
-| 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | [:heavy_check_mark:][201701S]    | [:heavy_check_mark:][201801S]    |  [:heavy_check_mark:][201901S]  |  [:heavy_check_mark:][202001S]  |
-| 2   | [:heavy_check_mark:][201502S] [Blog Post][201502]  | [:heavy_check_mark:][201602S]    | [:heavy_check_mark:][201702S]    | [:heavy_check_mark:][201802S]    |  [:heavy_check_mark:][201902S]  |  [:heavy_check_mark:][202002S]  |
-| 3   | [:heavy_check_mark:][201503S] [Blog Post][201503]  | [:heavy_check_mark:][201603S]    | [:heavy_check_mark:][201703S]    | [:heavy_check_mark:][201803S]    |  [:heavy_check_mark:][201903S]  |  [:heavy_check_mark:][202003S]  |
-| 4   | [:heavy_check_mark:][201504S] [Blog Post][201504]  | [:heavy_check_mark:][201604S]    | [:heavy_check_mark:][201704S]    | [:heavy_check_mark:][201804S]    |  [:heavy_check_mark:][201904S]  |  [:heavy_check_mark:][202004S]  |
-| 5   | [:heavy_check_mark:][201505S] [Blog Post][201505]  | [:heavy_check_mark:][201605S]    | [:heavy_check_mark:][201705S]    | [:heavy_check_mark:][201805S]    |  [:heavy_check_mark:][201905S]  |  [:heavy_check_mark:][202005S]  |
-| 6   | [:heavy_check_mark:][201506S] [Blog Post][201506]  | [:heavy_check_mark:][201606S]    | [:heavy_check_mark:][201706S]    | [:heavy_check_mark:][201806S]    |  [:heavy_check_mark:][201906S]  |  [:heavy_check_mark:][202006S]  |
-| 7   | [:heavy_check_mark:][201507S] [Blog Post][201507]  | [:heavy_check_mark:][201607S]    | [:heavy_check_mark:][201707S]    | [:heavy_check_mark:][201807S]    |  [:heavy_check_mark:][201907S]  |  [:heavy_check_mark:][202007S]  |
-| 8   | [:heavy_check_mark:][201508S] [Blog Post][201508]  | [:heavy_check_mark:][201608S]    | [:heavy_check_mark:][201708S]    | [:heavy_check_mark:][201808S]    |  [:heavy_check_mark:][201908S]  |  [:heavy_check_mark:][202008S]  |
-| 9   | [:heavy_check_mark:][201509S] [Blog Post][201509]  | [:heavy_check_mark:][201609S]    | [:heavy_check_mark:][201709S]    | [:heavy_check_mark:][201809S]    |  [:heavy_check_mark:][201909S]  |  [:heavy_check_mark:][202009S]  |
-| 10  | [:heavy_check_mark:][201510S] [Blog Post][201510]  | [:heavy_check_mark:][201610S]    | [:heavy_check_mark:][201710S]    | [:heavy_check_mark:][201810S]    |  [:heavy_check_mark:][201910S]  |  [:heavy_check_mark:][202010S]  |
-| 11  | [:heavy_check_mark:][201511S] [Blog Post][201511]  | [:heavy_exclamation_mark:][201611S]    | [:heavy_check_mark:][201711S]     | [:heavy_check_mark:][201811S]    |  [:heavy_check_mark:][201911S]  |  [:heavy_check_mark:][202011S]  |
-| 12  | [:heavy_check_mark:][201512S] [Blog Post][201512]  | [:heavy_check_mark:][201612S]    | [:heavy_check_mark:][201712S]    | [:heavy_check_mark:][201812S]    |  [:heavy_check_mark:][201912S]  |  [:heavy_check_mark:][202012S]  |
-| 13  | [:heavy_check_mark:][201513S] [Blog Post][201513]  | [:heavy_check_mark:][201613S]    | [:heavy_check_mark:][201713S]    | [:heavy_check_mark:][201813S]    |  [:heavy_check_mark:][201913S]  |  [:heavy_check_mark:][202013S]  |
-| 14  | [:heavy_check_mark:][201514S]    | [:heavy_check_mark:][201614S]    | [:heavy_check_mark:][201714S]    | [:heavy_check_mark:][201814S]    |  [:heavy_check_mark:][201914S]  |  [:heavy_check_mark:][202014S]  |
-| 15  | [:heavy_check_mark:][201515S]    | [:heavy_check_mark:][201615S]    | [:heavy_check_mark:][201715S]    | [:heavy_check_mark:][201815S]    |  [:heavy_check_mark:][201915S]  |  [:heavy_check_mark:][202015S]  |
-| 16  | [:heavy_check_mark:][201516S]    | [:heavy_check_mark:][201616S]    | [:heavy_check_mark:][201716S]    | [:heavy_check_mark:][201816S]    |  [:heavy_check_mark:][201916S]  |  [:heavy_check_mark:][202016S]  |
-| 17  | [:heavy_check_mark:][201517S]    | [:heavy_check_mark:][201617S]    | [:heavy_check_mark:][201717S]    | [:heavy_check_mark:][201817S]    |  [:heavy_check_mark:][201917S]  |  [:heavy_check_mark:][202017S]  |
-| 18  | [:heavy_check_mark:][201518S]    | [:heavy_check_mark:][201618S]    | [:heavy_check_mark:][201718S]    | [:heavy_check_mark:][201818S]    |  [:heavy_check_mark:][201918S]  |  [:heavy_check_mark:][202018S]  |
-| 19  | [:heavy_check_mark:][201519S]    | [:heavy_check_mark:][201619S]    | [:heavy_check_mark:][201719S]    | [:heavy_check_mark:][201819S]    |  [:heavy_check_mark:][201919S]  |  [:heavy_check_mark:][202019S]  |
-| 20  | [:heavy_check_mark:][201520S]    | [:heavy_check_mark:][201620S]    | [:heavy_check_mark:][201720S]    | [:heavy_check_mark:][201820S]    |  [:heavy_check_mark:][201920S]  |  [:heavy_check_mark:][202020S]  |
-| 21  | [:heavy_check_mark:][201521S]    | [:heavy_check_mark:][201621S]    | [:heavy_check_mark:][201721S]    | [:heavy_check_mark:][201821S]    |  [:heavy_check_mark:][201921S]  |  [:heavy_check_mark:][202021S]  |
-| 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | [:heavy_check_mark:][201722S]    | [:heavy_check_mark:][201822S]    |  [:heavy_check_mark:][201922S]  |  [:heavy_check_mark:][202022S]  |
-| 23  | [:heavy_check_mark:][201523S]    | [:heavy_check_mark:][201623S]    | [:heavy_check_mark:][201723S]    | [:heavy_check_mark:][201823S]    |  [:heavy_check_mark:][201923S]  |  [:heavy_check_mark:][202023S]  |
-| 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | [:heavy_check_mark:][201724S]    | [:heavy_check_mark:][201824S]    |  [:heavy_check_mark:][201924S]  |  [:heavy_check_mark:][202024S]  |
-| 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | [:heavy_check_mark:][201725S]    | [:heavy_check_mark:][201825S]    |  [:heavy_check_mark:][201925S]  |  [:heavy_check_mark:][202025S]  |
+| Day |   :tada:2015:tada:    |  :tada:2016:tada:  |  :tada:2017:tada:  |  :tada:2018:tada:  |  :tada:2019:tada:  | :tada:2020:tada:  |  2021  |
+|-----|-----------------------|--------|--------|--------|--------|--------|--------|
+| 1   | [:heavy_check_mark:][201501S] [Blog Post][201501]  | [:heavy_check_mark:][201601S]    | [:heavy_check_mark:][201701S]    | [:heavy_check_mark:][201801S]    |  [:heavy_check_mark:][201901S]  |  [:heavy_check_mark:][202001S]  |  :x:  |
+| 2   | [:heavy_check_mark:][201502S] [Blog Post][201502]  | [:heavy_check_mark:][201602S]    | [:heavy_check_mark:][201702S]    | [:heavy_check_mark:][201802S]    |  [:heavy_check_mark:][201902S]  |  [:heavy_check_mark:][202002S]  |  :x:  |
+| 3   | [:heavy_check_mark:][201503S] [Blog Post][201503]  | [:heavy_check_mark:][201603S]    | [:heavy_check_mark:][201703S]    | [:heavy_check_mark:][201803S]    |  [:heavy_check_mark:][201903S]  |  [:heavy_check_mark:][202003S]  |  :x:  |
+| 4   | [:heavy_check_mark:][201504S] [Blog Post][201504]  | [:heavy_check_mark:][201604S]    | [:heavy_check_mark:][201704S]    | [:heavy_check_mark:][201804S]    |  [:heavy_check_mark:][201904S]  |  [:heavy_check_mark:][202004S]  |  :x:  |
+| 5   | [:heavy_check_mark:][201505S] [Blog Post][201505]  | [:heavy_check_mark:][201605S]    | [:heavy_check_mark:][201705S]    | [:heavy_check_mark:][201805S]    |  [:heavy_check_mark:][201905S]  |  [:heavy_check_mark:][202005S]  |  :x:  |
+| 6   | [:heavy_check_mark:][201506S] [Blog Post][201506]  | [:heavy_check_mark:][201606S]    | [:heavy_check_mark:][201706S]    | [:heavy_check_mark:][201806S]    |  [:heavy_check_mark:][201906S]  |  [:heavy_check_mark:][202006S]  |  :x:  |
+| 7   | [:heavy_check_mark:][201507S] [Blog Post][201507]  | [:heavy_check_mark:][201607S]    | [:heavy_check_mark:][201707S]    | [:heavy_check_mark:][201807S]    |  [:heavy_check_mark:][201907S]  |  [:heavy_check_mark:][202007S]  |  :x:  |
+| 8   | [:heavy_check_mark:][201508S] [Blog Post][201508]  | [:heavy_check_mark:][201608S]    | [:heavy_check_mark:][201708S]    | [:heavy_check_mark:][201808S]    |  [:heavy_check_mark:][201908S]  |  [:heavy_check_mark:][202008S]  |  :x:  |
+| 9   | [:heavy_check_mark:][201509S] [Blog Post][201509]  | [:heavy_check_mark:][201609S]    | [:heavy_check_mark:][201709S]    | [:heavy_check_mark:][201809S]    |  [:heavy_check_mark:][201909S]  |  [:heavy_check_mark:][202009S]  |  :x:  |
+| 10  | [:heavy_check_mark:][201510S] [Blog Post][201510]  | [:heavy_check_mark:][201610S]    | [:heavy_check_mark:][201710S]    | [:heavy_check_mark:][201810S]    |  [:heavy_check_mark:][201910S]  |  [:heavy_check_mark:][202010S]  |  :x:  |
+| 11  | [:heavy_check_mark:][201511S] [Blog Post][201511]  | [:heavy_exclamation_mark:][201611S]    | [:heavy_check_mark:][201711S]     | [:heavy_check_mark:][201811S]    |  [:heavy_check_mark:][201911S]  |  [:heavy_check_mark:][202011S]  |  :x:  |
+| 12  | [:heavy_check_mark:][201512S] [Blog Post][201512]  | [:heavy_check_mark:][201612S]    | [:heavy_check_mark:][201712S]    | [:heavy_check_mark:][201812S]    |  [:heavy_check_mark:][201912S]  |  [:heavy_check_mark:][202012S]  |  :x:  |
+| 13  | [:heavy_check_mark:][201513S] [Blog Post][201513]  | [:heavy_check_mark:][201613S]    | [:heavy_check_mark:][201713S]    | [:heavy_check_mark:][201813S]    |  [:heavy_check_mark:][201913S]  |  [:heavy_check_mark:][202013S]  |  :x:  |
+| 14  | [:heavy_check_mark:][201514S]    | [:heavy_check_mark:][201614S]    | [:heavy_check_mark:][201714S]    | [:heavy_check_mark:][201814S]    |  [:heavy_check_mark:][201914S]  |  [:heavy_check_mark:][202014S]  |  :x:  |
+| 15  | [:heavy_check_mark:][201515S]    | [:heavy_check_mark:][201615S]    | [:heavy_check_mark:][201715S]    | [:heavy_check_mark:][201815S]    |  [:heavy_check_mark:][201915S]  |  [:heavy_check_mark:][202015S]  |  :x:  |
+| 16  | [:heavy_check_mark:][201516S]    | [:heavy_check_mark:][201616S]    | [:heavy_check_mark:][201716S]    | [:heavy_check_mark:][201816S]    |  [:heavy_check_mark:][201916S]  |  [:heavy_check_mark:][202016S]  |  :x:  |
+| 17  | [:heavy_check_mark:][201517S]    | [:heavy_check_mark:][201617S]    | [:heavy_check_mark:][201717S]    | [:heavy_check_mark:][201817S]    |  [:heavy_check_mark:][201917S]  |  [:heavy_check_mark:][202017S]  |  :x:  |
+| 18  | [:heavy_check_mark:][201518S]    | [:heavy_check_mark:][201618S]    | [:heavy_check_mark:][201718S]    | [:heavy_check_mark:][201818S]    |  [:heavy_check_mark:][201918S]  |  [:heavy_check_mark:][202018S]  |  :x:  |
+| 19  | [:heavy_check_mark:][201519S]    | [:heavy_check_mark:][201619S]    | [:heavy_check_mark:][201719S]    | [:heavy_check_mark:][201819S]    |  [:heavy_check_mark:][201919S]  |  [:heavy_check_mark:][202019S]  |  :x:  |
+| 20  | [:heavy_check_mark:][201520S]    | [:heavy_check_mark:][201620S]    | [:heavy_check_mark:][201720S]    | [:heavy_check_mark:][201820S]    |  [:heavy_check_mark:][201920S]  |  [:heavy_check_mark:][202020S]  |  :x:  |
+| 21  | [:heavy_check_mark:][201521S]    | [:heavy_check_mark:][201621S]    | [:heavy_check_mark:][201721S]    | [:heavy_check_mark:][201821S]    |  [:heavy_check_mark:][201921S]  |  [:heavy_check_mark:][202021S]  |  :x:  |
+| 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | [:heavy_check_mark:][201722S]    | [:heavy_check_mark:][201822S]    |  [:heavy_check_mark:][201922S]  |  [:heavy_check_mark:][202022S]  |  :x:  |
+| 23  | [:heavy_check_mark:][201523S]    | [:heavy_check_mark:][201623S]    | [:heavy_check_mark:][201723S]    | [:heavy_check_mark:][201823S]    |  [:heavy_check_mark:][201923S]  |  [:heavy_check_mark:][202023S]  |  :x:  |
+| 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | [:heavy_check_mark:][201724S]    | [:heavy_check_mark:][201824S]    |  [:heavy_check_mark:][201924S]  |  [:heavy_check_mark:][202024S]  |  :x:  |
+| 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | [:heavy_check_mark:][201725S]    | [:heavy_check_mark:][201825S]    |  [:heavy_check_mark:][201925S]  |  [:heavy_check_mark:][202025S]  |  :x:  |
 
 [201501]: https://dmatrix.dev/advent-of-code-year-2015-day-1/
 [201502]: https://dmatrix.dev/advent-of-code-year-2015-day-2/
@@ -206,3 +206,28 @@ You can click on check mark to find solution for that day
 [202024S]: CSharp/Solutions/2020/24
 [202025S]: CSharp/Solutions/2020/25
 
+[202101S]: CSharp/Solutions/2021/1
+[202102S]: CSharp/Solutions/2021/2
+[202103S]: CSharp/Solutions/2021/3
+[202104S]: CSharp/Solutions/2021/4
+[202105S]: CSharp/Solutions/2021/5
+[202106S]: CSharp/Solutions/2021/6
+[202107S]: CSharp/Solutions/2021/7
+[202108S]: CSharp/Solutions/2021/8
+[202109S]: CSharp/Solutions/2021/9
+[202110S]: CSharp/Solutions/2021/10
+[202111S]: CSharp/Solutions/2021/11
+[202112S]: CSharp/Solutions/2021/12
+[202113S]: CSharp/Solutions/2021/13
+[202114S]: CSharp/Solutions/2021/14
+[202115S]: CSharp/Solutions/2021/15
+[202116S]: CSharp/Solutions/2021/16
+[202117S]: CSharp/Solutions/2021/17
+[202118S]: CSharp/Solutions/2021/18
+[202119S]: CSharp/Solutions/2021/19
+[202120S]: CSharp/Solutions/2021/20
+[202121S]: CSharp/Solutions/2021/21
+[202122S]: CSharp/Solutions/2021/22
+[202123S]: CSharp/Solutions/2021/23
+[202124S]: CSharp/Solutions/2021/24
+[202125S]: CSharp/Solutions/2021/25
