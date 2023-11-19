@@ -22,7 +22,7 @@ You can click on check mark to find solution for that day
 | 11  | [:heavy_check_mark:][201511S] [Blog Post][201511]  | [:heavy_exclamation_mark:][201611S]    | [:heavy_check_mark:][201711S]     | [:heavy_check_mark:][201811S]    |  [:heavy_check_mark:][201911S]  |  [:heavy_check_mark:][202011S]  |  [:heavy_check_mark:][202111S]  |   [:heavy_check_mark:][202211S]   |
 | 12  | [:heavy_check_mark:][201512S] [Blog Post][201512]  | [:heavy_check_mark:][201612S]    | [:heavy_check_mark:][201712S]    | [:heavy_check_mark:][201812S]    |  [:heavy_check_mark:][201912S]  |  [:heavy_check_mark:][202012S]  |  [:heavy_check_mark:][202112S]  |   :x:   |
 | 13  | [:heavy_check_mark:][201513S] [Blog Post][201513]  | [:heavy_check_mark:][201613S]    | [:heavy_check_mark:][201713S]    | [:heavy_check_mark:][201813S]    |  [:heavy_check_mark:][201913S]  |  [:heavy_check_mark:][202013S]  |  [:heavy_check_mark:][202113S]  |   :x:   |
-| 14  | [:heavy_check_mark:][201514S]    | [:heavy_check_mark:][201614S]    | [:heavy_check_mark:][201714S]    | [:heavy_check_mark:][201814S]    |  [:heavy_check_mark:][201914S]  |  [:heavy_check_mark:][202014S]  |  [:heavy_check_mark:][202114S]  |   :x:   |
+| 14  | [:heavy_check_mark:][201514S] [Blog Post][201514]  | [:heavy_check_mark:][201614S]    | [:heavy_check_mark:][201714S]    | [:heavy_check_mark:][201814S]    |  [:heavy_check_mark:][201914S]  |  [:heavy_check_mark:][202014S]  |  [:heavy_check_mark:][202114S]  |   :x:   |
 | 15  | [:heavy_check_mark:][201515S]    | [:heavy_check_mark:][201615S]    | [:heavy_check_mark:][201715S]    | [:heavy_check_mark:][201815S]    |  [:heavy_check_mark:][201915S]  |  [:heavy_check_mark:][202015S]  |  [:heavy_check_mark:][202115S]  |   :x:   |
 | 16  | [:heavy_check_mark:][201516S]    | [:heavy_check_mark:][201616S]    | [:heavy_check_mark:][201716S]    | [:heavy_check_mark:][201816S]    |  [:heavy_check_mark:][201916S]  |  [:heavy_check_mark:][202016S]  |  [:heavy_check_mark:][202116S]  |   :x:   |
 | 17  | [:heavy_check_mark:][201517S]    | [:heavy_check_mark:][201617S]    | [:heavy_check_mark:][201717S]    | [:heavy_check_mark:][201817S]    |  [:heavy_check_mark:][201917S]  |  [:heavy_check_mark:][202017S]  |  [:heavy_check_mark:][202117S]  |   :x:   |
@@ -35,19 +35,20 @@ You can click on check mark to find solution for that day
 | 24  | [:heavy_check_mark:][201524S]    | [:heavy_check_mark:][201624S]    | [:heavy_check_mark:][201724S]    | [:heavy_check_mark:][201824S]    |  [:heavy_check_mark:][201924S]  |  [:heavy_check_mark:][202024S]  |  [:heavy_check_mark:][202124S]  |   :x:   |
 | 25  | [:heavy_check_mark:][201525S]    | [:heavy_check_mark:][201625S]    | [:heavy_check_mark:][201725S]    | [:heavy_check_mark:][201825S]    |  [:heavy_check_mark:][201925S]  |  [:heavy_check_mark:][202025S]  |  [:heavy_check_mark:][202125S]  |   :x:   |
 
-[201501]: https://dmatrix.dev/advent-of-code-year-2015-day-1/
-[201502]: https://dmatrix.dev/advent-of-code-year-2015-day-2/
-[201503]: https://dmatrix.dev/advent-of-code-year-2015-day-3/
-[201504]: https://dmatrix.dev/advent-of-code-year-2015-day-4/
-[201505]: https://dmatrix.dev/advent-of-code-year-2015-day-5/
-[201506]: https://dmatrix.dev/advent-of-code-year-2015-day-6/
-[201507]: https://dmatrix.dev/advent-of-code-year-2015-day-7/
-[201508]: https://dmatrix.dev/advent-of-code-year-2015-day-8/
-[201509]: https://dmatrix.dev/advent-of-code-year-2015-day-9/
-[201510]: https://dmatrix.dev/advent-of-code-year-2015-day-10/
-[201511]: https://dmatrix.dev/advent-of-code-year-2015-day-11/
-[201512]: https://dmatrix.dev/advent-of-code-year-2015-day-12/
-[201513]: https://dmatrix.dev/advent-of-code-year-2015-day-13/
+[201501]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-1/
+[201502]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-2/
+[201503]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-3/
+[201504]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-4/
+[201505]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-5/
+[201506]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-6/
+[201507]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-7/
+[201508]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-8/
+[201509]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-9/
+[201510]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-10/
+[201511]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-11/
+[201512]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-12/
+[201513]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-13/
+[201514]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-14/
 
 
 [201501S]: CSharp/Solutions/2015/1
