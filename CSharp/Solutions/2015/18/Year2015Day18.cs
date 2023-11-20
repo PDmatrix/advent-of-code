@@ -12,9 +12,7 @@ public class Year2015Day18 : ISolution
 	{
 		var state = GetState(lines);
 		for (var i = 0; i < 100; i++)
-		{
 			state = Step(state);
-		}
 			
 		return state.Select(r => r.Count(x => x)).Sum().ToString();
 	}
@@ -29,13 +27,9 @@ public class Year2015Day18 : ISolution
 			{
 				var neighborsCount = GetNeighborsCount(rowIdx, colIdx, state);
 				if (state[rowIdx][colIdx])
-				{
-					newRow.Add(neighborsCount == 2 || neighborsCount == 3);
-				}
+					newRow.Add(neighborsCount is 2 or 3);
 				else
-				{
 					newRow.Add(neighborsCount == 3);
-				}
 			}
 			newState.Add(newRow);
 		}
