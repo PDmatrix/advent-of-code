@@ -31,14 +31,10 @@ public class Year2015Day17 : ISolution
 	private static List<List<int>> SumUpRecursive(IReadOnlyList<int> numbers, int target, List<int> partial)
 	{
 		var res = new List<List<int>>();
-		var s = 0;
-		foreach (var x in partial) 
-			s += x;
+		var s = partial.Sum();
 
 		if (s == target)
-		{
 			res.Add(partial);
-		}
 
 		if (s >= target)
 			return res;
