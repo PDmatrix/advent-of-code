@@ -48,7 +48,7 @@ public class Year2015Day19 : ISolution
 		
 	private static string Replace(string text, int index, int length, string replace)
 	{
-		return text.Substring(0, index) + replace + text.Substring(index + length);
+		return text[..index] + replace + text[(index + length)..];
 	}
 		
 	private static int CountDistinctMolecules(IEnumerable<Replacement> replacements, string value)
@@ -70,6 +70,10 @@ public class Year2015Day19 : ISolution
 	{
 			
 		var molecule = lines.Last();
+
+		var num = molecule.Count(char.IsUpper) - CountStr("Rn") - CountStr("Ar") - 2 * CountStr("Y") - 1;
+		return num.ToString();
+
 		// Hacky solution
 		// https://www.reddit.com/r/adventofcode/comments/3xflz8/day_19_solutions/cy4h7ji?utm_source=share&utm_medium=web2x
 		int CountStr(string x)
@@ -83,7 +87,5 @@ public class Year2015Day19 : ISolution
 
 			return count;
 		}
-		var num = molecule.Count(char.IsUpper) - CountStr("Rn") - CountStr("Ar") - 2 * CountStr("Y") - 1;
-		return num.ToString();
 	}
 }
