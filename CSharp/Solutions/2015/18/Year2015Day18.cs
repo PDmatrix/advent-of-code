@@ -17,7 +17,7 @@ public class Year2015Day18 : ISolution
 		return state.Select(r => r.Count(x => x)).Sum().ToString();
 	}
 
-	private static List<List<bool>> Step(List<List<bool>> state)
+	private static List<List<bool>> Step(IReadOnlyList<List<bool>> state)
 	{
 		var newState = new List<List<bool>>();
 		for (var rowIdx = 0; rowIdx < state.Count; rowIdx++)
@@ -37,14 +37,14 @@ public class Year2015Day18 : ISolution
 		return newState;
 	}
 
-	private static int GetNeighborsCount(int rowIdx, int colIdx, List<List<bool>> state)
+	private static int GetNeighborsCount(int rowIdx, int colIdx, IReadOnlyList<List<bool>> state)
 	{
 		var res = 0;
 		for (var i = rowIdx - 1; i <= rowIdx + 1; i++)
 		{
 			for (var j = colIdx - 1; j <= colIdx + 1; j++)
 			{
-				if(i == rowIdx && j == colIdx)
+				if (i == rowIdx && j == colIdx)
 					continue;
 					
 				res += GetNeighbor(i, j, state);
@@ -68,18 +68,7 @@ public class Year2015Day18 : ISolution
 
 	private static List<List<bool>> GetState(IEnumerable<string> lines)
 	{
-		var state = new List<List<bool>>();
-		foreach (var line in lines)
-		{
-			var row = new List<bool>();
-			foreach (var light in line)
-			{
-				row.Add(light == '#');
-			}
-			state.Add(row);
-		}
-
-		return state;
+		return lines.Select(line => line.Select(light => light == '#').ToList()).ToList();
 	}
 
 	private static void Stuck(IReadOnlyList<List<bool>> state)
