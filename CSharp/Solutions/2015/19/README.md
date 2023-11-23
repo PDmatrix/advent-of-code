@@ -10,7 +10,8 @@ However, the machine has to be calibrated before it can be used.  Calibration in
 
 For example, imagine a simpler machine that supports only the following replacements:
 
-```H => HO
+```
+H => HO
 H => OH
 O => HH
 ```
@@ -39,7 +40,8 @@ Molecule fabrication always begins with just a single electron(It's a Red-Nosed 
 
 For example, suppose you have the following replacements:
 
-```e => H
+```
+e => H
 e => O
 H => HO
 H => OH

@@ -27,7 +27,7 @@ You can click on check mark to find solution for that day
 | 16  | [:heavy_check_mark:][201516S] [Blog Post][201516]  | [:heavy_check_mark:][201616S]    | [:heavy_check_mark:][201716S]    | [:heavy_check_mark:][201816S]    |  [:heavy_check_mark:][201916S]  |  [:heavy_check_mark:][202016S]  |  [:heavy_check_mark:][202116S]  |   :x:   |
 | 17  | [:heavy_check_mark:][201517S] [Blog Post][201517]  | [:heavy_check_mark:][201617S]    | [:heavy_check_mark:][201717S]    | [:heavy_check_mark:][201817S]    |  [:heavy_check_mark:][201917S]  |  [:heavy_check_mark:][202017S]  |  [:heavy_check_mark:][202117S]  |   :x:   |
 | 18  | [:heavy_check_mark:][201518S] [Blog Post][201518]  | [:heavy_check_mark:][201618S]    | [:heavy_check_mark:][201718S]    | [:heavy_check_mark:][201818S]    |  [:heavy_check_mark:][201918S]  |  [:heavy_check_mark:][202018S]  |  [:heavy_check_mark:][202118S]  |   :x:   |
-| 19  | [:heavy_check_mark:][201519S]    | [:heavy_check_mark:][201619S]    | [:heavy_check_mark:][201719S]    | [:heavy_check_mark:][201819S]    |  [:heavy_check_mark:][201919S]  |  [:heavy_check_mark:][202019S]  |  [:heavy_check_mark:][202119S]  |   :x:   |
+| 19  | [:heavy_check_mark:][201519S] [Blog Post][201519]  | [:heavy_check_mark:][201619S]    | [:heavy_check_mark:][201719S]    | [:heavy_check_mark:][201819S]    |  [:heavy_check_mark:][201919S]  |  [:heavy_check_mark:][202019S]  |  [:heavy_check_mark:][202119S]  |   :x:   |
 | 20  | [:heavy_check_mark:][201520S]    | [:heavy_check_mark:][201620S]    | [:heavy_check_mark:][201720S]    | [:heavy_check_mark:][201820S]    |  [:heavy_check_mark:][201920S]  |  [:heavy_check_mark:][202020S]  |  [:heavy_check_mark:][202120S]  |   :x:   |
 | 21  | [:heavy_check_mark:][201521S]    | [:heavy_check_mark:][201621S]    | [:heavy_check_mark:][201721S]    | [:heavy_check_mark:][201821S]    |  [:heavy_check_mark:][201921S]  |  [:heavy_check_mark:][202021S]  |  [:heavy_check_mark:][202121S]  |   :x:   |
 | 22  | [:heavy_check_mark:][201522S]    | [:heavy_check_mark:][201622S]    | [:heavy_check_mark:][201722S]    | [:heavy_check_mark:][201822S]    |  [:heavy_check_mark:][201922S]  |  [:heavy_check_mark:][202022S]  |  [:heavy_check_mark:][202122S]  |   :x:   |
@@ -53,6 +53,7 @@ You can click on check mark to find solution for that day
 [201516]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-16/
 [201517]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-17/
 [201518]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-18/
+[201519]: https://dmatrix.dev/posts/advent-of-code-year-2015-day-19/
 
 
 [201501S]: CSharp/Solutions/2015/1

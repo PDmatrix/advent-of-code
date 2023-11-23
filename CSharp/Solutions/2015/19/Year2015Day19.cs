@@ -33,7 +33,7 @@ public class Year2015Day19 : ISolution
 		var replacements = GetReplacements(enumerable);
 		var value = enumerable.Last();
 		var count = CountDistinctMolecules(replacements, value);
-		return count.ToString();
+		return count;
 	}
 		
 	private static IEnumerable<int> AllIndexesOf(string str, string searchString)
@@ -68,14 +68,13 @@ public class Year2015Day19 : ISolution
 
 	public object Part2(IEnumerable<string> lines)
 	{
-			
 		var molecule = lines.Last();
 
 		var num = molecule.Count(char.IsUpper) - CountStr("Rn") - CountStr("Ar") - 2 * CountStr("Y") - 1;
 		return num.ToString();
 
 		// Hacky solution
-		// https://www.reddit.com/r/adventofcode/comments/3xflz8/day_19_solutions/cy4h7ji?utm_source=share&utm_medium=web2x
+		// https://www.reddit.com/r/adventofcode/comments/3xflz8/day_19_solutions/cy4h7ji
 		int CountStr(string x)
 		{
 			var count = 0;
