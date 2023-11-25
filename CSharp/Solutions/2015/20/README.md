@@ -14,7 +14,8 @@ There are infinitely many Elves, numbered starting with ```1```.  Each Elf deliv
 
 So, the first nine houses on the street end up like this:
 
-```House 1 got 10 presents.
+```
+House 1 got 10 presents.
 House 2 got 30 presents.
 House 3 got 40 presents.
 House 4 got 70 presents.

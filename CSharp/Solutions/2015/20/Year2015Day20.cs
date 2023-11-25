@@ -22,28 +22,13 @@ public class Year2015Day20 : ISolution
 		return houseNumber.ToString();
 	}
 
-	private static int GetDivisorsSum(int n) 
-	{ 
-		var sum = 0; 
-		for (var i = 1; i <= Math.Sqrt(n); i++)
-		{
-			if (n % i != 0) 
-				continue;
-				
-			sum += i;
-			if (n / i != i)
-				sum += n / i;
-		}
-		return sum; 
-	}
-		
-	private static int GetDivisorsSumWithLimit(int n) 
+	private static int GetDivisorsSum(int n, int limit = -1) 
 	{ 
 		var sum = 0;
 		var iterations = 1;
 		for (var i = 1; i <= Math.Sqrt(n); i++)
 		{
-			if(iterations >= 50)
+			if (limit != -1 && iterations >= limit)
 				break;
 				
 			if (n % i != 0) 
@@ -68,7 +53,7 @@ public class Year2015Day20 : ISolution
 		while (input > calculatedValue)
 		{
 			houseNumber++;
-			calculatedValue = GetDivisorsSumWithLimit(houseNumber) * 11;
+			calculatedValue = GetDivisorsSum(houseNumber, 50) * 11;
 		}
 		return houseNumber.ToString();
 	}
