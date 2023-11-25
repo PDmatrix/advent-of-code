@@ -10,7 +10,8 @@ Your damage score and armor score both start at zero.  They can be increased by 
 
 Here is what the item shop is selling:
 
-```Weapons:    Cost  Damage  Armor
+```
+Weapons:    Cost  Damage  Armor
 Dagger        8     4       0
 Shortsword   10     5       0
 Warhammer    25     6       0
