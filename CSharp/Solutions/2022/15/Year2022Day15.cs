@@ -2,9 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using AdventOfCode.Common;
-using AdventOfCode.Solutions._2020._19;
 using JetBrains.Annotations;
 
 namespace AdventOfCode.Solutions._2022._15;
@@ -14,34 +12,35 @@ public class Year2022Day15 : ISolution
 {
 	public object Part1(IEnumerable<string> input)
 	{
-		input = new[]
-		{
-			"Sensor at x=2, y=18: closest beacon is at x=-2, y=15",
-			"Sensor at x=9, y=16: closest beacon is at x=10, y=16",
-			"Sensor at x=13, y=2: closest beacon is at x=15, y=3",
-			"Sensor at x=12, y=14: closest beacon is at x=10, y=16",
-			"Sensor at x=10, y=20: closest beacon is at x=10, y=16",
-			"Sensor at x=14, y=17: closest beacon is at x=10, y=16",
-			"Sensor at x=8, y=7: closest beacon is at x=2, y=10",
-			"Sensor at x=2, y=0: closest beacon is at x=2, y=10",
-			"Sensor at x=0, y=11: closest beacon is at x=2, y=10",
-			"Sensor at x=20, y=14: closest beacon is at x=25, y=17",
-			"Sensor at x=17, y=20: closest beacon is at x=21, y=22",
-			"Sensor at x=16, y=7: closest beacon is at x=15, y=3",
-			"Sensor at x=14, y=3: closest beacon is at x=15, y=3",
-			"Sensor at x=20, y=1: closest beacon is at x=15, y=3",
-		};
-		
-		var grid = ParseInput(input);
-		ShowScreen(grid);
-		return 1;
-	}
-	
-	// Sensor at x=2, y=18: closest beacon is at x=-2, y=15
+		var sensorBeaconPairs = ParseInput(input);
 
-	private static DefaultDictionary<Point, GridType> ParseInput(IEnumerable<string> input)
+		const int targetRow = 2000000;
+		var excludedPositions = new HashSet<int>();
+		var beaconPositions = new HashSet<Point>();
+
+		foreach (var (sensor, beacon) in sensorBeaconPairs)
+		{
+			beaconPositions.Add(beacon);
+			var distance = ManhattanDistance(sensor, beacon);
+
+			var dy = Math.Abs(sensor.Y - targetRow);
+			if (dy > distance)
+				continue;
+			
+			var dx = distance - dy;
+			for (var x = sensor.X - dx; x <= sensor.X + dx; x++)
+				excludedPositions.Add(x);
+		}
+		
+		foreach (var beacon in beaconPositions.Where(beacon => beacon.Y == targetRow))
+			excludedPositions.Remove(beacon.X);
+
+		return excludedPositions.Count;
+	}
+
+	private static List<(Point, Point)> ParseInput(IEnumerable<string> input)
 	{
-		var grid = new DefaultDictionary<Point, GridType>();
+		var list = new List<(Point, Point)>();
 		foreach (var line in input)
 		{
 			var splitted = line.Split(" ");
@@ -49,67 +48,59 @@ public class Year2022Day15 : ISolution
 			var y = int.Parse(splitted[3].Replace("y=", string.Empty).Replace(":", string.Empty));
 			var x2 = int.Parse(splitted[8].Replace("x=", string.Empty).Replace(",", string.Empty));
 			var y2 = int.Parse(splitted[9].Replace("y=", string.Empty));
-			grid.TryAdd(new Point(x, y), GridType.Sensor);
-			grid.TryAdd(new Point(x2, y2), GridType.Beacon);
+			list.Add((new Point(x, y), new Point(x2, y2)));
 		}
 
-		return grid;
+		return list;
 	}
-	
-	private class DefaultDictionary<TKey, TValue> : Dictionary<TKey, TValue> where TValue : new() where TKey : notnull
-	{
-		public new TValue this[TKey key]
-		{
-			get
-			{
-				if (TryGetValue(key, out var val)) 
-					return val;
-				val = new TValue();
-				return val;
-			}
-			set => base[key] = value;
-		}
-	}
-	
-	private enum GridType
-	{
-		Empty,
-		Beacon,
-		Sensor
-	}
-	
 
+	private static int ManhattanDistance(Point p1, Point p2)
+	{
+		return Math.Abs(p1.X - p2.X) + Math.Abs(p1.Y - p2.Y);
+	}
+	
 	public object Part2(IEnumerable<string> input)
 	{
-		return 2;
-	}
-	
-	private static void ShowScreen(Dictionary<Point, GridType> grid)
-	{
-		var minX = grid.Min(x => x.Key.X);
-		var maxX = grid.Max(x => x.Key.X);
-		var minY = grid.Min(x => x.Key.Y);
-		var maxY = grid.Max(x => x.Key.Y);
-		var sb = new StringBuilder();
-		sb.AppendLine();
-		for (int y = minY; y <= maxY; y++)
-		{
-			for (int x = minX; x <= maxX; x++)
-			{
-				var tile = grid.GetValueOrDefault(new Point(x, y), GridType.Empty);
-				sb.Append(tile switch
-				{
-					GridType.Empty => '.',
-					GridType.Beacon => 'B',
-					GridType.Sensor => 'S',
-					_ => throw new ArgumentOutOfRangeException()
-				});
-			}
+		var sensorBeaconPairs = ParseInput(input);
+		const int maxCoordinate = 4000000;
+		var boundaries = new List<(int x, int y)>();
 
-			sb.AppendLine();
+		foreach (var (sensor, beacon) in sensorBeaconPairs)
+		{
+			var distance = ManhattanDistance(sensor, beacon);
+
+			for (var dx = -distance - 1; dx <= distance + 1; dx++)
+			{
+				var dy = (distance + 1) - Math.Abs(dx);
+				if (sensor.X + dx < 0 || sensor.X + dx > maxCoordinate)
+					continue;
+				
+				if (sensor.Y + dy >= 0 && sensor.Y + dy <= maxCoordinate)
+					boundaries.Add((sensor.X + dx, sensor.Y + dy));
+				if (sensor.Y - dy >= 0 && sensor.Y - dy <= maxCoordinate)
+					boundaries.Add((sensor.X + dx, sensor.Y - dy));
+			}
 		}
 
-		Console.Write(sb.ToString());
-	}
+		foreach (var point in boundaries)
+		{
+			var covered = false;
+			foreach (var (sensor, beacon) in sensorBeaconPairs)
+			{
+				var distance = ManhattanDistance(sensor, beacon);
+				var distanceToPoint = ManhattanDistance(sensor, new Point(point.x, point.y));
 
+				if (distanceToPoint > distance)
+					continue;
+				
+				covered = true;
+				break;
+			}
+
+			if (!covered)
+				return (long)point.x * 4000000 + point.y;
+		}
+
+		throw new Exception("No solution found");
+	}
 }
