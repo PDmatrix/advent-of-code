@@ -42,7 +42,6 @@ public partial class Year2022Day22 : ISolution
 
 			for (var j = 0; j < mCount; j++)
 			{
-				//ShowScreen(grid, current);
 				var (possible, newCurrent) = Possible(grid, current, direction);
 				if (possible)
 					current = newCurrent;
