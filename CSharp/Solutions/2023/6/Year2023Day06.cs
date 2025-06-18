@@ -10,12 +10,6 @@ public class Year2023Day06 : ISolution
 {
 	public object Part1(IEnumerable<string> input)
 	{
-		// input = new[]
-		// {
-		// 	"Time:      7  15   30",
-		// 	"Distance:  9  40  200",
-		// };
-		
 		var times = GetNumbers(input.First());
 		var distances = GetNumbers(input.Last());
 
@@ -24,12 +18,6 @@ public class Year2023Day06 : ISolution
 
 	public object Part2(IEnumerable<string> input)
 	{
-		// input = new[]
-		// {
-		// 	"Time:      7  15   30",
-		// 	"Distance:  9  40  200",
-		// };
-		
 		var times = GetNumbers(input.First(), true);
 		var distances = GetNumbers(input.Last(), true);
 
