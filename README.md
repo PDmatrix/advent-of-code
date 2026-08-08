@@ -98,6 +98,14 @@ After a solution passes, regenerate the progress table and links:
 
 The script discovers C# solution files under `CSharp/Solutions`; no manual README editing is needed. Use `./scripts/update-readme.py --check` to verify that the README is current without changing it.
 
+A tracked pre-commit hook can update and stage the README automatically. Enable it once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+The generated progress is then included in the commit being created.
+
 </details>
 
 ## Run a solution

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+repo_root=$(git rev-parse --show-toplevel) || exit 1
+update_script="$repo_root/scripts/update-readme.py"
+
+if [ ! -x "$update_script" ]; then
+    echo "pre-commit: $update_script is missing or not executable" >&2
+    exit 1
+fi
+
+if ! "$update_script"; then
+    echo "pre-commit: failed to update README.md" >&2
+    exit 1
+fi
+
+# Include generated progress changes in the commit being created.
+git -C "$repo_root" add -- README.md
