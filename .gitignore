@@ -87,3 +87,4 @@ modules.xml
 
 *.in
 .vscode/
+__pycache__/
