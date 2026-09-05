@@ -7,7 +7,7 @@
 <p align="center">
   <img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?logo=dotnet&logoColor=white">
 <!-- progress-badge:start -->
-  <img alt="Progress: 261 of 262 days" src="https://img.shields.io/badge/days%20solved-261%20%2F%20262-brightgreen">
+  <img alt="Progress: 262 of 262 days" src="https://img.shields.io/badge/days%20solved-262%20%2F%20262-brightgreen">
 <!-- progress-badge:end -->
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 </p>
@@ -15,7 +15,7 @@
 ## Progress
 
 <!-- progress:start -->
-**261 of 262 days solved (99.6%)**
+**262 of 262 days solved (100.0%)**
 
 Each block represents one day: `█` solved, `░` not solved. Select a year to browse its solutions.
 
@@ -23,7 +23,7 @@ Each block represents one day: `█` solved, `░` not solved. Select a year to 
 |:----:|:---------|-------:|
 | [2025](CSharp/Solutions/2025) | `████████████` | 12 / 12 ✅ |
 | [2024](CSharp/Solutions/2024) | `█████████████████████████` | 25 / 25 ✅ |
-| [2023](CSharp/Solutions/2023) | `████████████████████████░` | 24 / 25 |
+| [2023](CSharp/Solutions/2023) | `█████████████████████████` | 25 / 25 ✅ |
 | [2022](CSharp/Solutions/2022) | `█████████████████████████` | 25 / 25 ✅ |
 | [2021](CSharp/Solutions/2021) | `█████████████████████████` | 25 / 25 ✅ |
 | [2020](CSharp/Solutions/2020) | `█████████████████████████` | 25 / 25 ✅ |
@@ -48,7 +48,7 @@ Each block represents one day: `█` solved, `░` not solved. Select a year to 
 
 ### 2023
 
-[01](CSharp/Solutions/2023/1) · [02](CSharp/Solutions/2023/2) · [03](CSharp/Solutions/2023/3) · [04](CSharp/Solutions/2023/4) · [05](CSharp/Solutions/2023/5) · [06](CSharp/Solutions/2023/6) · [07](CSharp/Solutions/2023/7) · [08](CSharp/Solutions/2023/8) · [09](CSharp/Solutions/2023/9) · [10](CSharp/Solutions/2023/10) · [11](CSharp/Solutions/2023/11) · [12](CSharp/Solutions/2023/12) · [13](CSharp/Solutions/2023/13) · [14](CSharp/Solutions/2023/14) · [15](CSharp/Solutions/2023/15) · [16](CSharp/Solutions/2023/16) · [17](CSharp/Solutions/2023/17) · [18](CSharp/Solutions/2023/18) · [19](CSharp/Solutions/2023/19) · [20](CSharp/Solutions/2023/20) · [21](CSharp/Solutions/2023/21) · [22](CSharp/Solutions/2023/22) · [23](CSharp/Solutions/2023/23) · [24](CSharp/Solutions/2023/24)
+[01](CSharp/Solutions/2023/1) · [02](CSharp/Solutions/2023/2) · [03](CSharp/Solutions/2023/3) · [04](CSharp/Solutions/2023/4) · [05](CSharp/Solutions/2023/5) · [06](CSharp/Solutions/2023/6) · [07](CSharp/Solutions/2023/7) · [08](CSharp/Solutions/2023/8) · [09](CSharp/Solutions/2023/9) · [10](CSharp/Solutions/2023/10) · [11](CSharp/Solutions/2023/11) · [12](CSharp/Solutions/2023/12) · [13](CSharp/Solutions/2023/13) · [14](CSharp/Solutions/2023/14) · [15](CSharp/Solutions/2023/15) · [16](CSharp/Solutions/2023/16) · [17](CSharp/Solutions/2023/17) · [18](CSharp/Solutions/2023/18) · [19](CSharp/Solutions/2023/19) · [20](CSharp/Solutions/2023/20) · [21](CSharp/Solutions/2023/21) · [22](CSharp/Solutions/2023/22) · [23](CSharp/Solutions/2023/23) · [24](CSharp/Solutions/2023/24) · [25](CSharp/Solutions/2023/25)
 
 ### 2022
 
