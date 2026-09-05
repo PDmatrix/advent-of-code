@@ -15,7 +15,7 @@
 ## Progress
 
 <!-- progress:start -->
-**261 of 262 days solved (100%)**
+**261 of 262 days solved (99.6%)**
 
 Each block represents one day: `█` solved, `░` not solved. Select a year to browse its solutions.
 

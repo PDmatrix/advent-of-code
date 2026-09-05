@@ -63,7 +63,7 @@ def render_badge(solved: int, total: int) -> str:
 def render_progress(progress: dict[int, list[int]]) -> str:
     solved = sum(len(days) for days in progress.values())
     total = sum(DAYS_PER_YEAR.get(year, DEFAULT_DAYS) for year in progress)
-    percentage = round(solved / total * 100)
+    percentage = f"{solved / total * 100:.1f}"
 
     lines = [
         f"**{solved} of {total} days solved ({percentage}%)**",
