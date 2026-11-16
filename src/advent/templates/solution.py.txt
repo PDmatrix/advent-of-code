@@ -1,0 +1,9 @@
+"""Solve each part using the selected input text, without file I/O."""
+
+
+def part1(raw: str) -> int | str:
+    raise NotImplementedError
+
+
+def part2(raw: str) -> int | str:
+    raise NotImplementedError

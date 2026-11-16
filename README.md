@@ -1,7 +1,7 @@
 <h1 align="center">Advent of Code</h1>
 
 <p align="center">
-  My C# solutions for <a href="https://adventofcode.com/">Advent of Code</a>.
+  My C# and Python solutions for <a href="https://adventofcode.com/">Advent of Code</a>.
 </p>
 
 <p align="center">
@@ -13,6 +13,8 @@
 </p>
 
 ## Progress
+
+Progress includes C# solutions only.
 
 <!-- progress:start -->
 **262 of 262 days solved (100.0%)**
@@ -88,33 +90,85 @@ Each block represents one day: `█` solved, `░` not solved. Select a year to 
 </details>
 
 <details>
-<summary><strong>Maintaining progress</strong></summary>
+<summary><strong>Update progress</strong></summary>
 
-After a solution passes, regenerate the progress table and links:
+Update the tables and links from `CSharp/Solutions`:
 
 ```bash
 ./scripts/update-readme.py
 ```
 
-The script discovers C# solution files under `CSharp/Solutions`; no manual README editing is needed. Use `./scripts/update-readme.py --check` to verify that the README is current without changing it.
+Use `--check` to check the README without changes.
 
-A tracked pre-commit hook can update and stage the README automatically. Enable it once per clone:
+To update and stage the README before each commit, enable the hook:
 
 ```bash
 git config core.hooksPath .githooks
 ```
 
-The generated progress is then included in the commit being created.
-
 </details>
 
-## Run a solution
+## Python CLI
 
-From the project directory:
+### Set up
+
+Install [uv](https://docs.astral.sh/uv/) and Python 3.11 or later. Run these commands from the repository root:
+
+```bash
+uv sync
+source .venv/bin/activate
+```
+
+### Prepare a day
+
+Copy the `session` cookie value from your browser after you log in to Advent of Code.
+Use this Bash prompt to keep the value out of shell history. Do not commit the cookie.
+
+```bash
+read -rsp 'AoC session cookie: ' AOC_SESSION; echo
+export AOC_SESSION
+advent prepare --year 2026 --day 1
+```
+
+The command creates files in `Python/solutions/y2026/day01/` and downloads input to `Python/inputs/2026/day01.txt`.
+Each call downloads input again. It keeps existing solution files, samples, tests, and notes.
+Git ignores personal inputs and sample files.
+
+To prepare the first day without a solution directory, use:
+
+```bash
+advent prepare --year 2026 --next
+```
+
+### Run and test
+
+1. Copy the sample input into the day's `sample.txt`.
+2. Write `part1(raw)` and `part2(raw)` in `solution.py`. Each function receives input text and returns an `int` or `str`.
+3. Run the solution:
+
+```bash
+advent run --year 2026 --day 1 --sample
+advent run --year 2026 --day 1
+```
+
+Add `--part 1` to run one part. Use `--input PATH` instead of `--sample` to select another input file.
+The runner shows answers and times. It does not need network access.
+
+Set each expected sample answer in `test_solution.py`. Keep `None` to skip an unfinished part.
+
+```bash
+uv run pytest
+```
+
+Use `advent prepare --help` or `advent run --help` for command options.
+
+## C# CLI
+
+Run an existing C# solution:
 
 ```bash
 cd CSharp
 dotnet run -- --year 2025 --day 12
 ```
 
-Short options are also available: `-y 2025 -d 12`.
+You can also use `-y 2025 -d 12`.

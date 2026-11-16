@@ -88,3 +88,18 @@ modules.xml
 *.in
 .vscode/
 __pycache__/
+
+# Python tooling
+.venv/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Personal inputs, manually copied examples, and credentials stay local
+Python/inputs/
+Python/solutions/**/sample.txt
+.env
+.env.*

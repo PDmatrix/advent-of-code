@@ -1,0 +1,21 @@
+from pathlib import Path
+
+import pytest
+
+from advent.runner import load_solution
+
+DAY = Path(__file__).parent
+# Replace None with the expected sample answer to enable each test.
+EXPECTED_PART1: int | str | None = None
+EXPECTED_PART2: int | str | None = None
+
+
+@pytest.mark.parametrize("part, expected", [(1, EXPECTED_PART1), (2, EXPECTED_PART2)])
+def test_sample(part, expected):
+    if expected is None:
+        pytest.skip("Set the expected sample answer first")
+    with (DAY / "sample.txt").open(encoding="utf-8", newline="") as handle:
+        raw = handle.read()
+    assert raw.strip(), "Paste the example input into sample.txt"
+    solution = load_solution(DAY / "solution.py")
+    assert getattr(solution, f"part{part}")(raw) == expected
