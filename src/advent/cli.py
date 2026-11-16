@@ -22,7 +22,7 @@ def parser() -> argparse.ArgumentParser:
     selection = scaffold.add_mutually_exclusive_group(required=True)
     selection.add_argument("--day", type=int)
     selection.add_argument(
-        "--next", action="store_true", help="select the first unscaffolded day"
+        "--next", action="store_true", help="select the first day without solution.py"
     )
 
     execute = commands.add_parser("run", help="run a solution using local input")

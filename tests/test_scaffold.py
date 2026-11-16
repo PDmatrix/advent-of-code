@@ -33,6 +33,21 @@ def test_prepare_creates_files(repo, download):
     assert repo.input_path(2026, 1).read_text() == "  personal input\n\n"
 
 
+def test_prepare_preserves_existing_csharp_and_notes(repo, download):
+    directory = repo.day_dir(2015, 1)
+    directory.mkdir(parents=True)
+    csharp = directory / "Year2015Day01.cs"
+    csharp.write_text("// Existing C# solution\n")
+    (directory / "README.md").write_text("Existing notes\n")
+    (directory / "sample.txt").write_text("Existing sample\n")
+    prepare(repo, 2015, 1)
+    assert csharp.read_text() == "// Existing C# solution\n"
+    assert (directory / "README.md").read_text() == "Existing notes\n"
+    assert (directory / "sample.txt").read_text() == "Existing sample\n"
+    assert (directory / "solution.py").is_file()
+    assert (directory / "test_solution.py").is_file()
+
+
 def test_repeat_preserves_all_day_files_and_refreshes_input(repo, download):
     directory = prepare(repo, 2026, 1)
     for path in directory.iterdir():
@@ -58,7 +73,8 @@ def test_download_failure_creates_nothing(repo, download):
     download.side_effect = AdventError("unavailable")
     with pytest.raises(AdventError, match="unavailable"):
         prepare(repo, 2026, 1)
-    assert not (repo.root / "Python").exists()
+    assert not (repo.root / "solutions").exists()
+    assert not (repo.root / "inputs").exists()
 
 
 def test_failed_refresh_preserves_files(repo, download):
@@ -107,7 +123,7 @@ def test_generated_tests_collect_across_days(repo, download):
             "pytest",
             "--import-mode=importlib",
             "-q",
-            str(repo.root / "Python"),
+            str(repo.root / "solutions"),
         ],
         cwd=repo.root,
         text=True,

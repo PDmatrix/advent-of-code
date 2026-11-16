@@ -4,7 +4,7 @@ from advent.repository import AdventError, Repository
 
 
 def test_discovers_root_from_nested_directory(repo):
-    nested = repo.root / "Python" / "solutions" / "y2026"
+    nested = repo.root / "solutions" / "2026"
     nested.mkdir(parents=True)
     assert Repository.discover(nested) == repo
 
@@ -55,11 +55,28 @@ def test_invalid_config(repo, setting):
         Repository.discover(repo.root)
 
 
+def test_shared_paths(repo):
+    assert repo.day_dir(2026, 1) == repo.root / "solutions/2026/day01"
+    assert repo.input_path(2026, 1) == repo.root / "inputs/2026/day01.txt"
+
+
 def test_next_day_fills_first_gap_and_stops_at_limit(repo):
-    repo.day_dir(2026, 1).mkdir(parents=True)
-    repo.day_dir(2026, 3).mkdir(parents=True)
+    for day in (1, 3):
+        repo.day_dir(2026, day).mkdir(parents=True)
+        (repo.day_dir(2026, day) / "solution.py").touch()
     assert repo.next_day(2026) == 2
     for day in range(1, 13):
         repo.day_dir(2026, day).mkdir(exist_ok=True)
-    with pytest.raises(AdventError, match="All 12 days"):
+        (repo.day_dir(2026, day) / "solution.py").touch()
+    with pytest.raises(AdventError, match="All 12 days.*have Python solutions"):
         repo.next_day(2026)
+
+
+def test_next_day_ignores_csharp_and_empty_directories(repo):
+    directory = repo.day_dir(2015, 1)
+    directory.mkdir(parents=True)
+    (directory / "Year2015Day01.cs").touch()
+    repo.day_dir(2015, 2).mkdir()
+    assert repo.next_day(2015) == 1
+    (directory / "solution.py").touch()
+    assert repo.next_day(2015) == 2

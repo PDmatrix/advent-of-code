@@ -19,7 +19,7 @@ dev = ["pytest>=8"]
 packages = ["src/advent"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests", "Python/solutions"]
+testpaths = ["tests", "solutions"]
 addopts = "--import-mode=importlib"
 
 [tool.advent]

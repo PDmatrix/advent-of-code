@@ -23,6 +23,21 @@ def test_prepare_next_and_repeat(repo, prepared, capsys):
     assert not repo.day_dir(2026, 3).exists()
 
 
+def test_next_prepares_python_in_existing_csharp_day(repo, monkeypatch, capsys):
+    directory = repo.day_dir(2015, 1)
+    directory.mkdir(parents=True)
+    csharp = directory / "Year2015Day01.cs"
+    csharp.write_text("// Keep this solution\n")
+    monkeypatch.chdir(repo.root)
+    monkeypatch.setattr("advent.scaffold.download_input", Mock(return_value="input\n"))
+    assert main(["prepare", "--year", "2015", "--next"]) == 0
+    assert csharp.read_text() == "// Keep this solution\n"
+    assert (directory / "solution.py").is_file()
+    output = capsys.readouterr().out
+    assert "solutions/2015/day01" in output
+    assert "inputs/2015/day01.txt" in output
+
+
 def test_run_from_nested_directory_without_session(repo, prepared, monkeypatch, capsys):
     (prepared / "solution.py").write_text(
         "def part1(raw):\n    return 0\n\ndef part2(raw):\n    return 'done'\n"

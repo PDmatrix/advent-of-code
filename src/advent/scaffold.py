@@ -53,7 +53,7 @@ def prepare(repo: Repository, year: int, day: int) -> Path:
             "```bash\n"
             f"uv run advent run --year {year} --day {day} --sample\n"
             f"uv run advent run --year {year} --day {day}\n"
-            f"uv run pytest Python/solutions/y{year}/day{day:02}\n"
+            f"uv run pytest solutions/{year}/day{day:02}\n"
             "```\n"
         ),
     }

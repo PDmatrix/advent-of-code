@@ -62,13 +62,15 @@ class Repository:
             raise AdventError(f"Day must be between 1 and {count} for {year}.")
 
     def day_dir(self, year: int, day: int) -> Path:
-        return self.root / "Python" / "solutions" / f"y{year}" / f"day{day:02}"
+        return self.root / "solutions" / str(year) / f"day{day:02}"
 
     def input_path(self, year: int, day: int) -> Path:
-        return self.root / "Python" / "inputs" / str(year) / f"day{day:02}.txt"
+        return self.root / "inputs" / str(year) / f"day{day:02}.txt"
 
     def next_day(self, year: int) -> int:
         for day in range(1, self.day_count(year) + 1):
-            if not self.day_dir(year, day).exists():
+            if not (self.day_dir(year, day) / "solution.py").is_file():
                 return day
-        raise AdventError(f"All {self.day_count(year)} days of {year} are scaffolded.")
+        raise AdventError(
+            f"All {self.day_count(year)} days of {year} have Python solutions."
+        )

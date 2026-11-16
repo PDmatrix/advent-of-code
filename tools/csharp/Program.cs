@@ -49,7 +49,7 @@ internal static class Program
 		
 	private static async Task<IEnumerable<string>> GetInput(int year, int day)
 	{
-		return await File.ReadAllLinesAsync(
-			$"Input/{year}/Day{day.ToString().PadLeft(2, '0')}.in");
+		return await File.ReadAllLinesAsync(Path.Combine(
+			AppContext.BaseDirectory, "inputs", year.ToString(), $"day{day:00}.txt"));
 	}
 }

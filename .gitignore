@@ -99,7 +99,7 @@ build/
 dist/
 
 # Personal inputs, manually copied examples, and credentials stay local
-Python/inputs/
-Python/solutions/**/sample.txt
+/inputs/
+/solutions/**/sample.txt
 .env
 .env.*

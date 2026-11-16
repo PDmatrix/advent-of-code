@@ -4,11 +4,12 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
-SOLUTIONS = ROOT / "CSharp" / "Solutions"
+SOLUTIONS = ROOT / "solutions"
 
 # Advent of Code had 25 days through 2024 and 12 days in 2025.
 # Add an override here only when a future event has a different length.
@@ -26,19 +27,21 @@ WRITE_UPS = {
 def completed_days(year_dir: Path) -> list[int]:
     """Return days containing at least one C# solution file."""
     return sorted(
-        int(day_dir.name)
+        int(match.group(1))
         for day_dir in year_dir.iterdir()
         if day_dir.is_dir()
-        and day_dir.name.isdigit()
+        and (match := re.fullmatch(r"day([0-9]{2})", day_dir.name))
         and any(day_dir.glob("*.cs"))
     )
 
 
 def read_progress() -> dict[int, list[int]]:
     progress = {
-        int(year_dir.name): completed_days(year_dir)
+        int(year_dir.name): days
         for year_dir in SOLUTIONS.iterdir()
-        if year_dir.is_dir() and year_dir.name.isdigit()
+        if year_dir.is_dir()
+        and year_dir.name.isdigit()
+        and (days := completed_days(year_dir))
     }
 
     for year, days in progress.items():
@@ -63,13 +66,15 @@ def render_badge(solved: int, total: int) -> str:
 def render_progress(progress: dict[int, list[int]]) -> str:
     solved = sum(len(days) for days in progress.values())
     total = sum(DAYS_PER_YEAR.get(year, DEFAULT_DAYS) for year in progress)
-    percentage = f"{solved / total * 100:.1f}"
+    percentage = f"{solved / total * 100 if total else 0:.1f}"
 
     lines = [
         f"**{solved} of {total} days solved ({percentage}%)**",
         "",
-        "Each block represents one day: `█` solved, `░` not solved. "
-        "Select a year to browse its solutions.",
+        (
+            "Each block represents one day: `█` solved, `░` not solved. "
+            "Select a year to browse its solutions."
+        ),
         "",
         "| Year | Progress | Solved |",
         "|:----:|:---------|-------:|",
@@ -78,10 +83,12 @@ def render_progress(progress: dict[int, list[int]]) -> str:
     for year in sorted(progress, reverse=True):
         total_days = DAYS_PER_YEAR.get(year, DEFAULT_DAYS)
         completed = set(progress[year])
-        bar = "".join("█" if day in completed else "░" for day in range(1, total_days + 1))
+        bar = "".join(
+            "█" if day in completed else "░" for day in range(1, total_days + 1)
+        )
         status = " ✅" if len(completed) == total_days else ""
         lines.append(
-            f"| [{year}](CSharp/Solutions/{year}) | `{bar}` | "
+            f"| [{year}](solutions/{year}) | `{bar}` | "
             f"{len(completed)} / {total_days}{status} |"
         )
 
@@ -93,7 +100,7 @@ def render_solutions(progress: dict[int, list[int]]) -> str:
 
     for year in sorted(progress, reverse=True):
         links = " · ".join(
-            f"[{day:02}](CSharp/Solutions/{year}/{day})" for day in progress[year]
+            f"[{day:02}](solutions/{year}/day{day:02})" for day in progress[year]
         )
         sections.extend([f"### {year}", "", links])
 
